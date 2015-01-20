@@ -361,7 +361,7 @@ function setHoverSFDM() {
 			TweenLite.to(prjBnTemp, .75, { delay:0, x:0, y:800, autoAlpha:0, ease:"easeOutExpo"});
 
 			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
-			TweenLite.to(briefSfdm, .75, { delay:0, x:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(briefSfdm, .75, { delay:0, x:0, y:100, autoAlpha:0, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
