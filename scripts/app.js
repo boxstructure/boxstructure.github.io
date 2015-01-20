@@ -315,13 +315,13 @@ function setHoverSJVC() {
 			TweenLite.to(tabsjvc, .2, { scaleX:1, scaleY:1});
 			},
 
-
 			mousedown: function(){
 			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
 			$(this).unbind("mouseover mouseleave");
 			},
 
-			mouseup: function(){
+			click: function(){
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
@@ -375,6 +375,9 @@ function setHoverNavback() {
 				TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 				TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
 				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
+				// TweenLite.to(screen2, 0, { delay:.5, y:-150, autoAlpha:0, ease:"easeOutQuint"});
+
+		
 
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
