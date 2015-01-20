@@ -18,7 +18,7 @@ $(document).ready(function(){
 	var screen1 = $('.one');
 	var screen2 = $('.two');
 		// var sdfmframe = $('#frame2');
-		// var projectBannerText2 = $('.projectBannerText2');
+		var projectBannerText2 = $('.projectBannerText2');
 		// var prjBnSfdm = $('.projectBanner.sfdm');
 		// var prjBnSfdmTemp = $('.projectBannerTemp');
 
@@ -318,7 +318,7 @@ function setHoverSFDM() {
 			TweenLite.to(screen2, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
 
- 			
+ 			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
 
 // TweenLite.to($('#frame2'), {autoAlpha:.5});
 
@@ -369,7 +369,7 @@ function setHoverSFDM() {
 			TweenLite.to(prjBnSfdmTemp, .5, { delay:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(prjBnSfdmTemp, 0, { delay:2, y:0, autoAlpha:0, ease:"easeOutExpo"});
 
-			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
+
 
 			
 			// TweenLite.to(screen2, .4, { y:0, autoAlpha:1, ease:"easeOutQuint"});
