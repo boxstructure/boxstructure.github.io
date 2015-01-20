@@ -321,7 +321,7 @@ function setHoverSJVC() {
 			$(this).unbind("mouseover mouseleave");
 			},
 
-			click: function(){
+			mouseup: function(){
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
