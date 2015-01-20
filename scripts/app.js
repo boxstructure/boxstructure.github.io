@@ -249,16 +249,12 @@ function setHoverSFDM() {
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screen2, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
-
 			},
-
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 			TweenLite.to(screen2, .4, { autoAlpha:0, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1, scaleY:1});
-			
-
 			},
 
 
@@ -321,6 +317,12 @@ function setHoverSJVC() {
 
 			click: function(){
 			setTimeout( function(){
+				var prjBnTemp = $('#frame2').contents().find("#projectBannerTemp");
+			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+
+			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
+			TweenLite.to(briefSfdm, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+
 			$(mainTemplate).css('z-index', 0);}, 200);
 
 			TweenLite.to(tabsjvc, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
