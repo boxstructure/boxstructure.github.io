@@ -348,7 +348,7 @@ function setHoverSFDM() {
 
 			mousedown: function(){
 			TweenLite.to(tabsfdm, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
-			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
+
 
 			// $("#frame2").contents().find("prjBnSfdmTemp").fadeOut();
 
@@ -356,6 +356,8 @@ function setHoverSFDM() {
 			},
 
 			mouseup: function(){
+			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
+			
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
