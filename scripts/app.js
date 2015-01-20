@@ -17,16 +17,11 @@ $(document).ready(function(){
 	var screen0 = $ ('.screen');
 	var screen1 = $('.one');
 	var screen2 = $('.two');
-		// var sdfmframe = $('#frame2');
-		// var projectBannerText2 = $('.projectBannerText2');
-		// var prjBnSfdm = $('.projectBanner.sfdm');
-		// var prjBnSfdmTemp = $('.projectBannerTemp');
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
 	var tabrice = $('.tab.effectDS.tRice');
@@ -49,15 +44,9 @@ $(document).ready(function(){
 
 	TweenLite.set(screen1, {autoAlpha:0});
 	TweenLite.set(screen2, {autoAlpha:0});
-		// TweenLite.set(prjBnSfdmTemp, {autoAlpha:1});
-
-		// TweenLite.set(projectBannerText2, {autoAlpha:0});
-		// TweenLite.set(prjBnSfdm, {y:-200});
-		
-			// TweenLite.set(sdfmframe, {autoAlpha:0});
 
 	TweenLite.set(navback, {autoAlpha:0});
-	// TweenLite.set($('#frame2'), {autoAlpha:.5});
+
 
 	TweenLite.set(tabsfdm, {autoAlpha:0});
 	TweenLite.set(tabrice, {autoAlpha:0});
@@ -81,18 +70,6 @@ $(document).ready(function(){
             event.preventDefault();
     });
 
-// setTimeout( function () {
-//         $('#frame1').attr("onload", function () {            
-//             $('#frame1').contents().find('body').css( "background-color", "#BADA55" );
-//         });
-//  });
-
-
-
-// setTimeout( function(){
-// 				$('#frame2').attr('src', $('#frame2').attr('src')); contentWindow.scrollTo(0,0);},
-// 				200)
-
 ////////////////////////////////////////////////////////Tab Category///////////
 
 
@@ -104,7 +81,7 @@ $(function() {
     });
 });
 
-// ////////////////////////////////////////////////////////Tab Category Chronological///////////
+///////////////////////////////////////////////////////////Tab Category Chronological///////////
 
 function setHoverWorkChron() {
 	menuWorkChron
@@ -121,27 +98,9 @@ function setHoverWorkChron() {
 			mousedown: function(){
 			TweenLite.to(menuWorkChron, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
 			
-
-			// TweenLite.to(tabsfdm, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabrice, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabmisc, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabslrv, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabgs20, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabhtwr, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabco2w, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabsjvc, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabkyrt, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabuvia, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabbatn, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabflar, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-
-
-			// $(this).unbind("mouseover mouseleave");
 			},
 
 			mouseup: function(){
-			// setTimeout( function(){
-			// $(mainTemplate).css('z-index', 0);}, 200);
 			TweenLite.to(ttlBrief, .5, { delay:.5, delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 
 			TweenLite.to(menuWorkChron, .1, { delay:.15, scaleX:1, scaleY: 1, ease:"easeInQuart"});
@@ -242,22 +201,6 @@ function setHoverWorkAlpha() {
 
 			mousedown: function(){
 			TweenLite.to(menuWorkAlpha, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
-
-			// TweenLite.to(tabsfdm, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabrice, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabmisc, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabslrv, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabgs20, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabhtwr, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabco2w, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabsjvc, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabkyrt, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabuvia, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabbatn, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-			// TweenLite.to(tabflar, .05, { x:0, y:0, autoAlpha:1, ease:"easeInQuart"});
-
-
-			// $(this).unbind("mouseover mouseleave");
 			},
 
 			mouseup: function(){
@@ -285,11 +228,6 @@ function setHoverWorkAlpha() {
 			TweenLite.to(tabsjvc, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabuvia, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
 
-
-
-
-			// $(this).unbind("mouseover mouseleave");
-			// $(setHoverWorkChron).bind("mouseover mouseleave");
     	}
         });
 	}
@@ -313,45 +251,18 @@ function setHoverSFDM() {
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screen2, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
-
- 			
-
-// TweenLite.to($('#frame2'), {autoAlpha:.5});
-
 			},
-
-// 			$(document).ready(function() {
-//   $('#image1').mouseover(function(){
-//     $('#frame1').attr('src','https://www.gg-jr-day-2015-5668142265139200-hp.jpg');
-//   }).mouseout(function(){
-//     $('#frame1').attr('src','http://lostfilm.tv');
-//   });
-// });
-
-
-	
-// 			setTimeout( function(){
-// 				$('#frame2').attr('src', $('#frame2').attr('src')); contentWindow.scrollTo(0,0);},
-// 				200)
-
 
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 			TweenLite.to(screen2, .4, { autoAlpha:0, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1, scaleY:1});
-			// TweenLite.to(prjBnSfdmTemp, .2, { delay:.0, autoAlpha:0, ease:"easeOutExpo"});
-			
-
 			},
 
 
 			mousedown: function(){
 			TweenLite.to(tabsfdm, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
-
-
-			// $("#frame2").contents().find("prjBnSfdmTemp").fadeOut();
-
 			$(this).unbind("mouseover mouseleave");
 			},
 
@@ -375,12 +286,6 @@ function setHoverSFDM() {
 			TweenLite.to(prjBnSfdmTemp, .5, { delay:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(prjBnSfdmTemp, 0, { delay:2, y:0, autoAlpha:0, ease:"easeOutExpo"});
 
-
-
-
-			
-			// TweenLite.to(screen2, .4, { y:0, autoAlpha:1, ease:"easeOutQuint"});
-			
 			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback).bind("mouseover mouseleave");
     	}
@@ -416,7 +321,7 @@ function setHoverSJVC() {
 			$(this).unbind("mouseover mouseleave");
 			},
 
-			click: function(){
+			mouseup: function(){
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
@@ -470,9 +375,6 @@ function setHoverNavback() {
 				TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 				TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
 				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
-				// TweenLite.to(screen2, 0, { delay:.5, y:-150, autoAlpha:0, ease:"easeOutQuint"});
-
-		
 
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
