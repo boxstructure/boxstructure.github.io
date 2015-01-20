@@ -315,7 +315,7 @@ function setHoverSJVC() {
 			$(this).unbind("mouseover mouseleave");
 			},
 
-			click: function(){
+			mouseup: function(){
 			setTimeout( function(){
 				var prjBnTemp = $('#frame2').contents().find("#projectBannerTemp");
 			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
