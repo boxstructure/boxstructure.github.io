@@ -358,8 +358,13 @@ function setHoverSFDM() {
 			mouseup: function(){
 
 			$('#frame2').contents().find("#projectBannerTemp").fadeOut('fast');
-			$('#frame2').contents().find("#projectBriefContainer").fadeOut('fast');
-			
+			// $('#frame2').contents().find("#projectBriefContainer").fadeOut('fast');
+			$('#frame2').contents().find("#projectBriefContainer").move('#projectBriefContainer') .set('margin-left', 200)
+  .end();
+
+
+ 
+
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
