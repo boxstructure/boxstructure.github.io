@@ -372,8 +372,6 @@ function setHoverSFDM() {
 			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
 
-			TweenLite.to(prjBnSfdmTemp, .5, { delay:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
-			TweenLite.to(prjBnSfdmTemp, 0, { delay:2, y:0, autoAlpha:0, ease:"easeOutExpo"});
 
 
 
@@ -416,7 +414,7 @@ function setHoverSJVC() {
 			$(this).unbind("mouseover mouseleave");
 			},
 
-			click: function(){
+			mouseup: function(){
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
@@ -443,7 +441,7 @@ function setHoverSJVC() {
 
 function setHoverNavback() {
 	navback
-		.off('mouseover mouseleave mousedown click')
+		.off('mouseover mouseleave mousedown mouseup')
 		.on({
 			mouseover: function(){
 
@@ -461,7 +459,7 @@ function setHoverNavback() {
 				$(this).unbind("mouseover mouseleave");
 				},
 
-			click: function(){
+			mouseup: function(){
 			setTimeout( function(){
 				
 				$(mainTemplate).css('z-index', 50);}, 200);
@@ -470,9 +468,6 @@ function setHoverNavback() {
 				TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 				TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
 				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
-				// TweenLite.to(screen2, 0, { delay:.5, y:-150, autoAlpha:0, ease:"easeOutQuint"});
-
-		
 
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
@@ -507,19 +502,6 @@ function setHoverNavback() {
 
 
 
-
-// navback.on('click', function(){
-// 		setTimeout( function(){
-// 		$(mainTemplate).css('z-index', 50);}, 200);
-// 		TweenLite.to(navback, .1, {autoAlpha:0});
-// 		TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
-// 		TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
-// 		TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
-// 		$(setHover).bind("mouseover mouseleave");
-
-// 		setTimeout( function(){
-// 		$('#frame').attr('src', $('#frame').attr('src')); contentWindow.scrollTo(0,0);},200);
-// });
 
 
 
