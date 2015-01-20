@@ -260,6 +260,7 @@ function setHoverSFDM() {
 
 			mousedown: function(){
 			TweenLite.to(tabsfdm, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+			},
 
 			mouseup: function(){
 
