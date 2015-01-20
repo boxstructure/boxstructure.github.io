@@ -120,7 +120,7 @@ html, body{
 	height:100%;
 	border-radius: 2px;
 	box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.4);
-	background-position: 0 360px; 
+	background-position: 0 340px; 
 	background-size:100% auto;
 	background-image: url(../img/cover-02-bottombg.png);
 }
