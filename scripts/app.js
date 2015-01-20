@@ -295,7 +295,7 @@ function setHoverSFDM() {
 
 function setHoverSJVC() {
 	tabsjvc
-		.off('mouseover mouseleave click')
+		.off('mouseover mouseleave mousedown click')
 		.on({
 			mouseover: function(){
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
@@ -309,15 +309,13 @@ function setHoverSJVC() {
 			TweenLite.to(tabsjvc, .2, { scaleX:1, scaleY:1});
 			},
 
-			// mousedown: function(){
-			// TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+			mousedown: function(){
+			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
 			// $(this).unbind("mouseover mouseleave");
 			// },
 
 			click: function(){
-			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
-
 			setTimeout( function(){
 
 			$(mainTemplate).css('z-index', 0);}, 200);
