@@ -315,9 +315,9 @@ function setHoverSJVC() {
 			TweenLite.to(tabsjvc, .2, { scaleX:1, scaleY:1});
 			},
 
+
 			mousedown: function(){
 			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
-
 			$(this).unbind("mouseover mouseleave");
 			},
 
