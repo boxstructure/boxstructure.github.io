@@ -295,7 +295,7 @@ function setHoverSFDM() {
 
 function setHoverSJVC() {
 	tabsjvc
-		.off('mouseover mouseleave mousedown mouseup')
+		.off('mouseover mouseleave click')
 		.on({
 			mouseover: function(){
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
@@ -309,22 +309,24 @@ function setHoverSJVC() {
 			TweenLite.to(tabsjvc, .2, { scaleX:1, scaleY:1});
 			},
 
-			mousedown: function(){
+			// mousedown: function(){
+			// TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+			// $(this).unbind("mouseover mouseleave");
+			// },
+
+			click: function(){
 			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
-			$(this).unbind("mouseover mouseleave");
-			},
-
-			mouseup: function(){
 			setTimeout( function(){
 
 			$(mainTemplate).css('z-index', 0);}, 200);
 
-			TweenLite.to(tabsjvc, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
-			TweenLite.to(navback, .5, {autoAlpha:.6});
-			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
-			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
-			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
+			TweenLite.to(tabsjvc, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
 			
 			$(tabsjvc).unbind("mouseover mouseleave");
 			$(setHoverNavback).bind("mouseover mouseleave");
