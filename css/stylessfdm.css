@@ -266,7 +266,7 @@ ul {
 	list-style-type: none;
 }
 
-.projectBriefContainer{
+#projectBriefContainer{
 	z-index: 100;
 	margin:0 auto;
 	position: absolute;
