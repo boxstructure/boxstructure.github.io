@@ -261,13 +261,10 @@ function setHoverSFDM() {
 			mousedown: function(){
 			TweenLite.to(tabsfdm, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
-			$(this).unbind("mouseover mouseleave");
-			},
-
 			mouseup: function(){
 
 			var prjBnTemp = $('#frame2').contents().find("#projectBannerTemp");
-			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
 
 			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
 			TweenLite.to(briefSfdm, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
