@@ -313,7 +313,7 @@ function setHoverSJVC() {
 			TweenLite.to(tabsjvc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
 			// $(this).unbind("mouseover mouseleave");
-			// },
+			},
 
 			click: function(){
 			setTimeout( function(){
