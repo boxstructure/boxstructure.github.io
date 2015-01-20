@@ -341,7 +341,10 @@ function setHoverSFDM() {
 			TweenLite.to(screen2, .4, { autoAlpha:0, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1, scaleY:1});
 			// TweenLite.to(prjBnSfdmTemp, .2, { delay:.0, autoAlpha:0, ease:"easeOutExpo"});
+			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
+
 			},
+
 
 			mousedown: function(){
 			TweenLite.to(tabsfdm, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
@@ -365,7 +368,7 @@ function setHoverSFDM() {
 			TweenLite.to(prjBnSfdmTemp, .5, { delay:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(prjBnSfdmTemp, 0, { delay:2, y:0, autoAlpha:0, ease:"easeOutExpo"});
 
-			$('#frame2').contents().find("#projectBannerTemp").fadeOut();
+
 
 
 			
