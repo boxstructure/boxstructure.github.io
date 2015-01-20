@@ -361,7 +361,7 @@ function setHoverSFDM() {
 			TweenLite.to(prjBnTemp, .75, { delay:0, x:0, y:800, autoAlpha:0, ease:"easeOutExpo"});
 
 			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
-			TweenLite.to(briefSfdm, .75, { delay:0, x:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(briefSfdm, .5, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
@@ -369,7 +369,7 @@ function setHoverSFDM() {
 			TweenLite.to(tabsfdm, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
 			TweenLite.to(navback, .5, {autoAlpha:.6});
 			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
-			TweenLite.to(bottomCover, .75, { delay:0, x:0, y:500, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
 
 			TweenLite.to(prjBnSfdmTemp, .5, { delay:0, y:500, autoAlpha:0, ease:"easeOutExpo"});
