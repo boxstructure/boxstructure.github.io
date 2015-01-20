@@ -358,10 +358,10 @@ function setHoverSFDM() {
 			mouseup: function(){
 
 			var prjBnTemp = $('#frame2').contents().find("#projectBannerTemp");
-			TweenLite.to(prjBnTemp, .5, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
 
 			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
-			TweenLite.to(briefSfdm, .5, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(briefSfdm, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
