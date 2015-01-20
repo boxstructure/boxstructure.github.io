@@ -359,8 +359,8 @@ function setHoverSFDM() {
 
 			$('#frame2').contents().find("#projectBannerTemp").fadeOut('fast');
 			// $('#frame2').contents().find("#projectBriefContainer").fadeOut('fast');
-			$('#frame2').contents().find("#projectBriefContainer").TweenLite.to('#projectBriefContainer', 1 {autoAlpha:.6});
-
+			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
+			TweenLite.to(briefSfdm, .45, { delay:.2, autoAlpha:0});
 
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
