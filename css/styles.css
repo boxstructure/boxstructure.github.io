@@ -279,10 +279,10 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	/*opacity: .6;*/
 }
 
-#brief{
+/*#brief{
 	top:30px;
 	left:50px;
-}
+}*/
 
 .type{
 	left:215px;
@@ -632,14 +632,7 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	height: 100%;	
 }
 
-.one{
-	/*border:5px solid red;*/
-}
 
-.two{
-	/*margin-top: -3000px;*/
-	/*border:5px solid red;*/
-}
 
 .iframeProject{
 	

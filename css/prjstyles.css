@@ -116,10 +116,19 @@ p{
 	height: 100%;
 	margin:0 auto;
 	/*background-image: url(../img/qc-main-template-01.png);*/
-	/*overflow: auto;*/
+	overflow: hidden;
 	/*opacity:.5;*/
-	background-color: #6cbde8;
 	/*border:3px solid red;*/
+}
+
+.csjvc{
+	background-color: #6cbde8;
+}
+
+.cslrv{
+	background-size: 100% auto;
+	background-repeat: repeat;
+	background-image: url(../img/slrv00bk.jpg);
 }
 
 .projectBanner{
@@ -136,23 +145,36 @@ p{
 
 .sjvc{
 	background-color: #6cbde8;
-	/*background-image: url(../img/stjo0m.png);*/
 }
+
+
 
 .projectLogo{
 	z-index:15;
-	position:relative;
 	width: 400px;
 	height:100px;
 	/*border:2px solid red;*/
 }
 
 .Lsjvc{
+	position:relative;
 	top:205px;
-	left:80px;
+	left:30px;
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-image: url(../img/stjo0logo.png);
+}
+
+.Lslrv{
+	font-family:'Yanone Kaffeesatz';
+	font-size: 32pt;
+	font-weight: 700;
+	color:#B71C1C;
+	position:absolute;
+	top:190px;
+	left:10px;
+	background-size:100%;
+	background-repeat:no-repeat;
 }
 
 .projectSections {
@@ -163,36 +185,77 @@ p{
 
 .projectBannerText{
 	position:relative;
-	width:350px;
-	height:100px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	/*border:2px solid green;*/
 }
 
 #btSjvc{
+	width:350px;
+	height:100px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	top:180px;
-	left:80px;
+	left:30px;
 	color:#fff;
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	font-weight:400;
 	font-size: 16px;
 	line-height: 1.5em;
 	/*line-height: 1.5em;*/
 }
 
+#btSlrv{
+	width:250px;
+	height:100px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
+	top:240px;
+	left:10px;
+	color:#000;
+	font-family: 'Open Sans';
+	font-weight:400;
+	font-size: 14px;
+	line-height: 1em;
+	/*line-height: 1.5em;*/
+}
+
+
 .projectImg{
 	z-index: 10;
-	position: relative;	
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	/*border:1px solid orange;*/
 }
 
+.slrv0{
+	z-index: 10;
+	position: absolute;	
+	top:51px;
+	right:70px;
+	width:870px;
+	height:450px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/slrv00a.png);
+	/*border:1px solid red;*/
+}
+
+.slrv1{
+	z-index: 5;
+	position: absolute;	
+	top:60px;
+	left:640px;
+	width:370px;
+	height:100%;
+	opacity: .95;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/slrv00b.png);
+}
+
 .sjvc0{
-	
+	position: relative;	
 	top:-100px;
-	left:620px;
-	width:350px;
+	left:560px;
+	width:380px;
 	height:300px;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -207,7 +270,7 @@ ul {
 .projectBrief{
 	position: relative;
 	top:95px;
-	left: 70px;
+	left: 68px;
 	width:100px;
 	height:150px;
 	margin-left:0px;
@@ -241,6 +304,7 @@ ul {
 }
 
 .sjvc1{
+	position: relative;	
 	width:960px;
 	height: 280px;
 	top:-20px;
@@ -266,6 +330,7 @@ ul {
 }
 
 .sjvc2{
+	position: relative;	
 	width:940px;
 	height:786px;
 	top:120px;
@@ -280,6 +345,7 @@ ul {
 }
 
 .sjvc3{
+	position: relative;	
 	width:940px;
 	height:656px;
 	top:190px;
@@ -299,6 +365,7 @@ ul {
 }
 
 .sjvc4{
+	position: relative;	
 	width:940px;
 	height:1323px;
 	/*padding:0;*/
