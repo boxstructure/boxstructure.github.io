@@ -295,6 +295,8 @@ ul {
 }
 
 .briefSummary{
+	margin-top: 4px;
+	margin-left:2px;
 	font-family: Open Sans;
 	font-weight: 400;
 	font-size:9pt;
@@ -302,6 +304,8 @@ ul {
 }
 
 .briefTags{
+	margin-top: 4px;
+	margin-left:2px;
 	font-family: Open Sans;
 	font-weight: 300;
 	font-size:9pt;
