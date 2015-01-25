@@ -164,6 +164,7 @@ p{
 	.co2w{
 		z-index: 0;
 		top:0px;
+		left:-8px;
 		width:1040px;
 		height:1250px;
 		background-size: 100% auto;
