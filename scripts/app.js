@@ -554,8 +554,8 @@ function setHoverRICE() {
 		
 			mouseup: function(){
 
-			var prjBnTemp2 = $('#frame7').contents().find(".projectBannerTemp");
-			TweenLite.to(prjBnTemp2, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
+			// var prjBnTemp2 = $('#frame7').contents().find(".projectBannerTemp");
+			// TweenLite.to(prjBnTemp2, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
 
 			var briefRice = $('#frame7').contents().find(".projectBriefContainer");
 			TweenLite.to(briefRice, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
