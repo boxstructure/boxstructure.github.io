@@ -20,6 +20,8 @@ $(document).ready(function(){
 	var screen3 = $('.three');
 	var screen4 = $('.four');
 	var screen5 = $('.five');
+	var screen6 = $('.six');
+	var screen7 = $('.seven');
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
@@ -51,6 +53,9 @@ $(document).ready(function(){
 	TweenLite.set(screen3, {autoAlpha:0});
 	TweenLite.set(screen4, {autoAlpha:0});
 	TweenLite.set(screen5, {autoAlpha:0});
+	TweenLite.set(screen6, {autoAlpha:0});
+	TweenLite.set(screen7, {autoAlpha:0});
+
 
 	TweenLite.set(navback, {autoAlpha:0});
 
@@ -479,6 +484,95 @@ function setHoverFLAR() {
 	setHoverFLAR();
 
 
+function setHoverHTWR() {
+	tabhtwr
+		.off('mouseover mouseleave mousedown click')
+		.on({
+			mouseover: function(){
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screen6, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(tabhtwr, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+			TweenLite.to(screen6, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(tabhtwr, .2, { scaleX:1, scaleY:1});
+			},
+
+			mousedown: function(){
+			TweenLite.to(tabhtwr, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+			// $(this).unbind("mouseover mouseleave");
+			},
+
+			click: function(){
+			setTimeout( function(){
+
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(tabhtwr, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+			
+			$(tabhtwr).unbind("mouseover mouseleave");
+			$(setHoverNavback).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(tabhtwr).click(function(){
+   	setHoverHTWR();
+	});
+	setHoverHTWR();
+
+
+function setHoverRICE() {
+	tabrice
+		.off('mouseover mouseleave mousedown click')
+		.on({
+			mouseover: function(){
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screen7, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(tabrice, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+			TweenLite.to(screen7, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(tabrice, .2, { scaleX:1, scaleY:1});
+			},
+
+			mousedown: function(){
+			TweenLite.to(tabrice, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+			// $(this).unbind("mouseover mouseleave");
+			},
+
+			click: function(){
+			setTimeout( function(){
+
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(tabrice, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+			
+			$(tabrice).unbind("mouseover mouseleave");
+			$(setHoverNavback).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(tabrice).click(function(){
+   	setHoverRICE();
+	});
+	setHoverRICE();
+
 ////////////////////////////////////////////////////////Back Navigation///////////
 
 
@@ -517,6 +611,7 @@ function setHoverNavback() {
 				$(setHoverSLRV).bind("mouseover mouseleave");
 				$(setHoverCO2W).bind("mouseover mouseleave");
 				$(setHoverFLAR).bind("mouseover mouseleave");
+				$(setHoverHTWR).bind("mouseover mouseleave");
 
 				setTimeout( function(){
 				$('#frame1').attr('src', $('#frame1').attr('src')); contentWindow.scrollTo(0,0);},
@@ -524,6 +619,22 @@ function setHoverNavback() {
 				setTimeout( function(){
 				$('#frame2').attr('src', $('#frame2').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
+				setTimeout( function(){
+				$('#frame3').attr('src', $('#frame3').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				setTimeout( function(){
+				$('#frame4').attr('src', $('#frame4').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				setTimeout( function(){
+				$('#frame5').attr('src', $('#frame5').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				setTimeout( function(){
+				$('#frame6').attr('src', $('#frame6').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				setTimeout( function(){
+				$('#frame7').attr('src', $('#frame7').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+		
 
 			}
 

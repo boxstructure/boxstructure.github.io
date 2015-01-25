@@ -116,8 +116,6 @@ p{
 	height: 100%;
 	/*display: inline;*/
 	overflow: hidden;
-
-
 	/*border:3px solid red;*/
 }
 
@@ -138,6 +136,11 @@ p{
 	background-repeat: no-repeat;
 
 	/*border:1px solid blue;*/
+}
+
+.rice{
+	background-image: url(../img/rice00.jpg);
+	/*background-image: url(../img/stjo0m.png);*/
 }
 
 .sfdm{
@@ -167,15 +170,23 @@ p{
 	width:980px;
 }
 
-#projectBannerTemp{
+.projectBannerTemp{
 	z-index: 100;
 	position:absolute;
- 	/*bottom:140px;*/
- 	/*right:200px;*/
- 	/*top:65%;*/
- 	top:230px;
+	/*border:2px solid green;*/
+}
 
- 	/*bottom:10%;*/
+.btempRice{
+ 	top:200px;
+ 	left:10%;
+	width:300px;
+	/*height:100px;*/
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
+	/*border:2px solid green;*/
+}
+
+.btempSfdm{
+ 	top:230px;
  	left:50%;
 	width:450px;
 	/*height:100px;*/
@@ -214,6 +225,19 @@ p{
 	opacity: .5;
 }
 
+#btRice{
+
+	/*margin-right:0px;*/
+	left:25%;
+	text-align: left;
+	color:#fff;
+	font-family: Raleway;
+	font-weight:300;
+	font-size: 26px;
+	line-height: 1.2em;
+	/*line-height: 1.5em;*/
+	/*border:2px solid red;*/
+}
 
 #btSfdm{
 
@@ -237,6 +261,17 @@ p{
 	font-size: 11pt;
 	line-height: 16pt;
 	/*height:405px;*/
+	margin-left:0px;
+	/*border:2px solid green;*/
+}
+
+.projectBannerText3{
+	position: relative;
+	left: 0;
+	top: 10px;
+	width:310px;
+	font-size: 11pt;
+	line-height: 13pt;
 	margin-left:0px;
 	/*border:2px solid green;*/
 }
@@ -266,32 +301,42 @@ ul {
 	list-style-type: none;
 }
 
-#projectBriefContainer{
+.projectBriefContainer{
 	z-index: 100;
 	margin:0 auto;
 	position: absolute;
 	left:0;
 	right:0;
 	top:478px;
-
 	width:980px;
-
 	height:200px;
 	/*border:2px solid red;*/
 }
 
-.projectBrief{
-	/*z-index: 100;*/
-	position: relative;
 
-	/*top:180px;*/
+.projectBrief{
+	position: relative;
 	left: 55px;
 	width:134px;
 	height:164px;
 	margin-left:0px;
 	padding:13px 12px;
-	background-color: #fff;
 	/*border:2px solid red;*/
+}
+
+
+.pbRiceC{
+	top:50px;
+	/*border:1px solid red;*/
+}
+
+.pbSfdm{
+	background-color: #fff;
+}
+
+.pbSfdmC{
+	top:50px;
+	/*border:1px solid red;*/
 }
 
 .briefSummary{
@@ -302,6 +347,7 @@ ul {
 	font-size:9pt;
 	line-height: 10pt;
 }
+
 
 .briefTags{
 	margin-top: 4px;
@@ -320,8 +366,13 @@ ul {
 	/*border:2px solid green;*/
 }
 
-#sfdmOverview{
+#riceOverview{
 	top:80px;
+	right:180px;
+}
+
+#sfdmOverview{
+	top:-100px;
 	right:180px;
 }
 

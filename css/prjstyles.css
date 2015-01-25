@@ -121,6 +121,11 @@ p{
 	background-image: url(../img/co2w01.jpg);
 }*/
 
+.chtwr{
+	width:100%;
+	background-color: #424242;
+}
+
 .cflar{
 	width:100%;
 	background-color: #f37021;
@@ -148,6 +153,10 @@ p{
 	/*border:1px solid blue;*/
 }
 
+	.htwr{
+		/*height: 400px;*/
+	}
+
 	.flar{
 		background-color: #f37021;
 	}
@@ -168,6 +177,20 @@ p{
 	.sjvc{
 		background-color: #6cbde8;
 	}
+
+#projectLogoTexthtwr{
+		position:absolute;
+		top:220px;
+		left:367px;
+		font-family:'Open Sans';
+		font-size: 28pt;
+		font-weight: 500;
+		color:#fff;
+		text-shadow:1px 1px 1px rgba(0,0,0,.8);
+		background-size:100%;
+		background-repeat:no-repeat;
+}
+
 
 #projectLogoTextflar{
 		position:absolute;
@@ -233,6 +256,23 @@ p{
 	/*border:2px solid green;*/
 }
 
+#btHtwr{
+	position:relative;
+	width:320px;
+	height:100px;
+	text-align: right;
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
+	top:273px;
+	left:420px;
+	color:#fff;
+	font-family: 'Open Sans';
+	font-weight:400;
+	font-size: 13px;
+	line-height: 1.2em;
+	opacity: .5;
+	/*line-height: 1.5em;*/
+}
+
 
 #btFlar{
 	position:relative;
@@ -246,8 +286,8 @@ p{
 	font-weight:400;
 	font-size: 18px;
 	line-height: 1.2em;
-	/*line-height: 1.5em;*/
 }
+
 #btCo2w{
 	z-index: 20;
 	position:absolute;
@@ -315,6 +355,18 @@ p{
 	border:1px solid red;
 
 }*/
+
+.htwr0{
+	z-index: 10;
+	position: absolute;	
+	top:225px;
+	right:100px;
+	width:110px;
+	height:100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/htwrlogo.png);
+}
 
 .flar0{
 	z-index: 10;
