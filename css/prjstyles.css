@@ -240,7 +240,7 @@ p{
 		color:#B71C1C;
 		position:absolute;
 		top:190px;
-		left:10px;
+		left:0px;
 		background-size:100%;
 		background-repeat:no-repeat;
 	}
@@ -425,7 +425,7 @@ ul {
 .projectBrief{
 	position: relative;
 	top:95px;
-	left: 68px;
+	left: 65px;
 	width:100px;
 	height:150px;
 	margin-left:0px;

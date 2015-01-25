@@ -274,10 +274,10 @@ function setHoverSFDM() {
 
 			mouseup: function(){
 
-			var prjBnTemp = $('#frame2').contents().find("#projectBannerTemp");
+			var prjBnTemp = $('#frame2').contents().find(".projectBannerTemp");
 			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
 
-			var briefSfdm = $('#frame2').contents().find("#projectBriefContainer");
+			var briefSfdm = $('#frame2').contents().find(".projectBriefContainer");
 			TweenLite.to(briefSfdm, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
 
 			setTimeout( function(){
@@ -551,18 +551,25 @@ function setHoverRICE() {
 			// $(this).unbind("mouseover mouseleave");
 			},
 
-			click: function(){
-			setTimeout( function(){
+		
+			mouseup: function(){
 
+			var prjBnTemp2 = $('#frame7').contents().find(".projectBannerTemp");
+			TweenLite.to(prjBnTemp2, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
+
+			var briefRice = $('#frame7').contents().find(".projectBriefContainer");
+			TweenLite.to(briefRice, .35, { delay:0, x:0, y:400, autoAlpha:0, ease:"easeOutExpo"});
+
+			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
-			TweenLite.to(tabrice, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
-			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
-			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
-			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
-			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
-			
-			$(tabrice).unbind("mouseover mouseleave");
+			TweenLite.to(tabrice, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {autoAlpha:.6});
+			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
+
+			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback).bind("mouseover mouseleave");
     	}
         });
@@ -612,6 +619,7 @@ function setHoverNavback() {
 				$(setHoverCO2W).bind("mouseover mouseleave");
 				$(setHoverFLAR).bind("mouseover mouseleave");
 				$(setHoverHTWR).bind("mouseover mouseleave");
+				$(setHoverRICE).bind("mouseover mouseleave");
 
 				setTimeout( function(){
 				$('#frame1').attr('src', $('#frame1').attr('src')); contentWindow.scrollTo(0,0);},

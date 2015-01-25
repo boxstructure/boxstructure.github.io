@@ -139,6 +139,7 @@ p{
 }
 
 .rice{
+	padding-bottom: 65%;
 	background-image: url(../img/rice00.jpg);
 	/*background-image: url(../img/stjo0m.png);*/
 }
@@ -165,9 +166,9 @@ p{
 }
 
 .projectSections {
-	/*border:2px solid green;*/
 	margin:0 auto;
 	width:980px;
+	/*border:2px solid green;*/
 }
 
 .projectBannerTemp{
@@ -178,9 +179,9 @@ p{
 
 .btempRice{
  	top:200px;
- 	left:10%;
-	width:300px;
-	/*height:100px;*/
+ 	left:16%;
+	width:200px;
+	height:150px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	/*border:2px solid green;*/
 }
@@ -197,16 +198,9 @@ p{
 .projectBannerText{
 	z-index: 10;
 	position:absolute;
- 	/*bottom:140px;*/
- 	/*right:200px;*/
- 	/*top:65%;*/
- 	/*top:630px;*/
  	bottom:10%;
- 	/*bottom:10%;*/
  	left:50%;
 	width:450px;
-
-	/*height:100px;*/
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	/*border:2px solid green;*/
 }
@@ -228,7 +222,8 @@ p{
 #btRice{
 
 	/*margin-right:0px;*/
-	left:25%;
+	/*left:10%;*/
+	/*margin-left:100px;*/
 	text-align: left;
 	color:#fff;
 	font-family: Raleway;
@@ -316,7 +311,7 @@ ul {
 
 .projectBrief{
 	position: relative;
-	left: 55px;
+	left: 50px;
 	width:134px;
 	height:164px;
 	margin-left:0px;
@@ -324,9 +319,13 @@ ul {
 	/*border:2px solid red;*/
 }
 
+.pbRice{
+	background-color:rgba(255,255,255,0.7);
+}
 
 .pbRiceC{
 	top:50px;
+
 	/*border:1px solid red;*/
 }
 
