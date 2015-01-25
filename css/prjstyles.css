@@ -121,6 +121,10 @@ p{
 	background-image: url(../img/co2w01.jpg);
 }*/
 
+.cflar{
+	width:100%;
+	background-color: #f37021;
+}
 
 .csjvc{
 	background-color: #6cbde8;
@@ -144,24 +148,38 @@ p{
 	/*border:1px solid blue;*/
 }
 
-.co2w{
-	z-index: 0;
-	top:0px;
-	width:1040px;
-	height:1250px;
-	background-size: 100% auto;
-	background-position: 15px;
-	background-repeat: no-repeat;
-	background-image: url(../img/co2w01.jpg);
-	/*border:1px solid red;*/
+	.flar{
+		background-color: #f37021;
+	}
 
+	.co2w{
+		z-index: 0;
+		top:0px;
+		width:1040px;
+		height:1250px;
+		background-size: 100% auto;
+		background-position: 15px;
+		background-repeat: no-repeat;
+		background-image: url(../img/co2w01.jpg);
+		/*border:1px solid red;*/
+
+	}
+
+	.sjvc{
+		background-color: #6cbde8;
+	}
+
+#projectLogoTextflar{
+		position:absolute;
+		top:180px;
+		left:45px;
+		font-family:'lobster';
+		font-size: 70pt;
+		font-weight: 500;
+		color:#fff;
+		background-size:100%;
+		background-repeat:no-repeat;
 }
-
-.sjvc{
-	background-color: #6cbde8;
-}
-
-
 
 .projectLogo{
 	z-index:15;
@@ -170,39 +188,39 @@ p{
 	/*border:2px solid red;*/
 }
 
-.Lco2w{
-	position:absolute;
-	top:200px;
-	left:70px;
-	font-family: Roboto;
-	font-weight: 500; 
-	font-size: 20pt;
-	background-size:100%;
-	background-repeat:no-repeat;
-	text-shadow:1px 1px 1px rgba(0,0,0,.4);
-	color:#fff;
-}
+	.Lco2w{
+		position:absolute;
+		top:200px;
+		left:70px;
+		font-family: Roboto;
+		font-weight: 500; 
+		font-size: 20pt;
+		background-size:100%;
+		background-repeat:no-repeat;
+		text-shadow:1px 1px 1px rgba(0,0,0,.4);
+		color:#fff;
+	}
 
-.Lsjvc{
-	position:relative;
-	top:205px;
-	left:30px;
-	background-size:100%;
-	background-repeat:no-repeat;
-	background-image: url(../img/stjo0logo.png);
-}
+	.Lsjvc{
+		position:relative;
+		top:205px;
+		left:30px;
+		background-size:100%;
+		background-repeat:no-repeat;
+		background-image: url(../img/stjo0logo.png);
+	}
 
-.Lslrv{
-	font-family:'Yanone Kaffeesatz';
-	font-size: 32pt;
-	font-weight: 700;
-	color:#B71C1C;
-	position:absolute;
-	top:190px;
-	left:10px;
-	background-size:100%;
-	background-repeat:no-repeat;
-}
+	.Lslrv{
+		font-family:'Yanone Kaffeesatz';
+		font-size: 32pt;
+		font-weight: 700;
+		color:#B71C1C;
+		position:absolute;
+		top:190px;
+		left:10px;
+		background-size:100%;
+		background-repeat:no-repeat;
+	}
 
 .projectSections {
 	/*border:2px solid green;*/
@@ -215,6 +233,21 @@ p{
 	/*border:2px solid green;*/
 }
 
+
+#btFlar{
+	position:relative;
+	width:280px;
+	height:100px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
+	top:280px;
+	left:70px;
+	color:#fff;
+	font-family: 'Roboto Slab';
+	font-weight:400;
+	font-size: 18px;
+	line-height: 1.2em;
+	/*line-height: 1.5em;*/
+}
 #btCo2w{
 	z-index: 20;
 	position:absolute;
@@ -282,6 +315,18 @@ p{
 	border:1px solid red;
 
 }*/
+
+.flar0{
+	z-index: 10;
+	position: absolute;	
+	top:20px;
+	right:20px;
+	width:350px;
+	height:100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/flarelogo.png);
+}
 
 .slrv0{
 	z-index: 10;
