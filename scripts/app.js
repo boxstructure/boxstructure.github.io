@@ -22,6 +22,7 @@ $(document).ready(function(){
 	var screen5 = $('.five');
 	var screen6 = $('.six');
 	var screen7 = $('.seven');
+	var screen8 = $('.eight');
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
@@ -55,6 +56,7 @@ $(document).ready(function(){
 	TweenLite.set(screen5, {autoAlpha:0});
 	TweenLite.set(screen6, {autoAlpha:0});
 	TweenLite.set(screen7, {autoAlpha:0});
+	TweenLite.set(screen8, {autoAlpha:0});
 
 
 	TweenLite.set(navback, {autoAlpha:0});
@@ -580,6 +582,51 @@ function setHoverRICE() {
 	});
 	setHoverRICE();
 
+
+function setHoverBATN() {
+	tabbatn
+		.off('mouseover mouseleave mousedown click')
+		.on({
+			mouseover: function(){
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screen8, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(tabbatn, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+			TweenLite.to(screen8, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(tabbatn, .2, { scaleX:1, scaleY:1});
+			},
+
+			mousedown: function(){
+			TweenLite.to(tabbatn, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+			// $(this).unbind("mouseover mouseleave");
+			},
+
+			click: function(){
+			setTimeout( function(){
+
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(tabbatn, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+			
+			$(tabbatn).unbind("mouseover mouseleave");
+			$(setHoverNavback).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(tabbatn).click(function(){
+   	setHoverBATN();
+	});
+	setHoverBATN();
+
 ////////////////////////////////////////////////////////Back Navigation///////////
 
 
@@ -620,6 +667,7 @@ function setHoverNavback() {
 				$(setHoverFLAR).bind("mouseover mouseleave");
 				$(setHoverHTWR).bind("mouseover mouseleave");
 				$(setHoverRICE).bind("mouseover mouseleave");
+				$(setHoverBATN).bind("mouseover mouseleave");
 
 				setTimeout( function(){
 				$('#frame1').attr('src', $('#frame1').attr('src')); contentWindow.scrollTo(0,0);},
@@ -641,6 +689,9 @@ function setHoverNavback() {
 				200)
 				setTimeout( function(){
 				$('#frame7').attr('src', $('#frame7').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				setTimeout( function(){
+				$('#frame8').attr('src', $('#frame8').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
 		
 
