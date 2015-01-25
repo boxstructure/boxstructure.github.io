@@ -187,7 +187,7 @@ p{
 #projectLogoTextbatn{
 		position:absolute;
 		top:230px;
-		left:38%;
+		left:38.5%;
 		font-family:'Montserrat';
 		font-size: 28pt;
 		font-weight: 400;
@@ -277,11 +277,11 @@ p{
 
 #btBatn{
 	position:relative;
-	width:400px;
+	width:420px;
 	height:100px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
 	top:280px;
-	left:38%;
+	left:38.5%;
 	color:#fff;
 	font-family: 'Montserrat';
 	font-weight:400;
