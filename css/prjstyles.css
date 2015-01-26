@@ -134,6 +134,12 @@ p{
 	background-image: url(../img/co2w01.jpg);
 }*/
 
+.cuvia{
+	overflow:visible;
+	height:500px;
+	width:100%;
+}
+
 .ckyrt{
 	height:415px;
 	width:100%;
@@ -209,6 +215,20 @@ p{
 	.sjvc{
 		background-color: #6cbde8;
 	}
+
+#projectLogoTextuvia{
+		z-index: 50;
+		position:absolute;
+		top:239px;
+		/*top:195px;*/
+		left:130px;
+		font-family:'Raleway';
+		font-size: 60pt;
+		font-weight: 700;
+		color:#244182;
+		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
+}
+
 
 #projectLogoTextkyrt{
 		z-index: 50;
@@ -341,6 +361,23 @@ p{
 .projectBannerText{
 
 	/*border:2px solid green;*/
+}
+
+#btUvia{
+	z-index: 50;
+	position:absolute;
+	width:250px;
+	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
+	top:255px;
+	left:645px;
+	/*left:140px;*/
+	color:#244182;
+	font-family: 'Raleway';
+	font-weight:700;
+	font-size: 18px;
+	line-height: 1.2em;
+	/*opacity: .7;*/
+	/*border:1px solid blue;*/
 }
 
 #btKyrt{
@@ -489,6 +526,21 @@ p{
 
 }*/
 
+.uvia0{
+	z-index: 10;
+	position: relative;	
+	top:110px;
+	margin:0 auto;
+	/*left:50px;*/
+	width:250px;
+	/*height:450px;*/
+	height:800px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/uvia00logo.png);
+	/*border:1px solid red;*/
+}
+
 .kyrt0{
 	z-index: 10;
 	position: relative;	
@@ -606,6 +658,13 @@ ul {
 	height:150px;
 	margin-left:0px;
 	/*border:2px solid red;*/
+}
+
+#bbuvia{
+	top:-5px;
+	left:65px;
+	/*background-color:rgba(255,255,255,0.3);*/
+	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
 
 #bbkyrt{
