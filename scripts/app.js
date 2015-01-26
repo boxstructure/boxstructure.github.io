@@ -24,6 +24,7 @@ $(document).ready(function(){
 	var screen7 = $('.seven');
 	var screen8 = $('.eight');
 	var screen9 = $('.nine');
+	var screen10 = $('.ten');
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
@@ -59,7 +60,7 @@ $(document).ready(function(){
 	TweenLite.set(screen7, {autoAlpha:0});
 	TweenLite.set(screen8, {autoAlpha:0});
 	TweenLite.set(screen9, {autoAlpha:0});
-
+	TweenLite.set(screen10, {autoAlpha:0});
 
 	TweenLite.set(navback, {autoAlpha:0});
 
@@ -641,7 +642,7 @@ function setHoverGS20() {
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
-			TweenLite.to(screen0, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(screen9, .4, { autoAlpha:0, ease:"easeOutQuint"});
 			TweenLite.to(tabgs20, .2, { scaleX:1, scaleY:1});
 			},
 
@@ -672,6 +673,54 @@ function setHoverGS20() {
    	setHoverGS20();
 	});
 	setHoverGS20();
+
+function setHoverKYRT() {
+	tabkyrt
+		.off('mouseover mouseleave mousedown click')
+		.on({
+			mouseover: function(){
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screen10, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(tabkyrt, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+			TweenLite.to(screen10, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(tabkyrt, .2, { scaleX:1, scaleY:1});
+			},
+
+			mousedown: function(){
+			TweenLite.to(tabkyrt, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+			// $(this).unbind("mouseover mouseleave");
+			},
+
+			click: function(){
+			
+			var briefKyrt = $('#frame10').contents().find(".projectBrief");
+			TweenLite.to(briefKyrt, .35, { y:-100, autoAlpha:0, ease:"easeOutExpo"});
+
+			setTimeout( function(){
+
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(tabkyrt, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+			
+			$(tabkyrt).unbind("mouseover mouseleave");
+			$(setHoverNavback).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(tabkyrt).click(function(){
+   	setHoverKYRT();
+	});
+	setHoverKYRT();
 
 ////////////////////////////////////////////////////////Back Navigation///////////
 
@@ -715,6 +764,7 @@ function setHoverNavback() {
 				$(setHoverRICE).bind("mouseover mouseleave");
 				$(setHoverBATN).bind("mouseover mouseleave");
 				$(setHoverGS20).bind("mouseover mouseleave");
+				$(setHoverKYRT).bind("mouseover mouseleave");
 
 				setTimeout( function(){
 				$('#frame1').attr('src', $('#frame1').attr('src')); contentWindow.scrollTo(0,0);},
@@ -743,7 +793,9 @@ function setHoverNavback() {
 				setTimeout( function(){
 				$('#frame9').attr('src', $('#frame9').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
-		
+				setTimeout( function(){
+				$('#frame10').attr('src', $('#frame10').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
 
 			}
 

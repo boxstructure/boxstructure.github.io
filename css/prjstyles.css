@@ -115,11 +115,37 @@ p{
 	/*border:3px solid red;*/
 }
 
+#kyrtSky{
+	position: absolute;
+	width:100%;
+	height:460px;
+	background-color: #ceeae4;
+}
+#kyrtGround{
+	position: absolute;
+	top:368px;
+	width:100%;
+	height:300px;
+	background-color: #a6c879;
+}
 /*.cco2w{
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-image: url(../img/co2w01.jpg);
 }*/
+
+.ckyrt{
+	height:415px;
+	width:100%;
+}
+
+/*z-index: 10;
+	position: relative;	
+	bottom:60px;
+	margin:0 auto;
+	width:860px;
+	/*height:450px;*/
+
 
 .chtwr{
 	width:100%;
@@ -153,7 +179,6 @@ p{
 	/*border:1px solid blue;*/
 }
 
-
 	.batn{
 		width:100%;
 		background-color: #E57373;
@@ -184,6 +209,21 @@ p{
 	.sjvc{
 		background-color: #6cbde8;
 	}
+
+#projectLogoTextkyrt{
+		z-index: 50;
+		position:relative;
+		top:195px;
+		left:4px;
+		font-family:'Montserrat';
+		font-size: 22pt;
+		font-weight: 400;
+		color:#000;
+		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
+		background-size:100%;
+		background-repeat:no-repeat;
+}
+
 #projectLogoTextgs20{
 		z-index: 50;
 		position:relative;
@@ -197,6 +237,7 @@ p{
 		background-size:100%;
 		background-repeat:no-repeat;
 }
+
 #projectLogoTextbatn{
 		position:absolute;
 		top:230px;
@@ -301,6 +342,22 @@ p{
 
 	/*border:2px solid green;*/
 }
+
+#btKyrt{
+	z-index: 50;
+	position:absolute;
+	width:420px;
+	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
+	top:235px;
+	left:4px;
+	color:#000;
+	font-family: 'Montserrat';
+	font-weight:400;
+	font-size: 14px;
+	line-height: 1.2em;
+	opacity: .7;
+}
+
 
 #btGs20{
 	z-index: 50;
@@ -431,6 +488,21 @@ p{
 	border:1px solid red;
 
 }*/
+
+.kyrt0{
+	z-index: 10;
+	position: relative;	
+	top:20px;
+	margin:0 auto;
+	width:860px;
+	/*height:450px;*/
+	height:100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/kyrt00.png);
+	/*border:1px solid red;*/
+}
+
 
 .gs20-0{
 	z-index: 10;

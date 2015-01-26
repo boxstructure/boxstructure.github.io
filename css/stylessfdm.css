@@ -139,12 +139,16 @@ p{
 }
 
 .rice{
+	background-size:100%;
+	background-repeat:no-repeat;
 	padding-bottom: 65%;
 	background-image: url(../img/rice00.jpg);
 	/*background-image: url(../img/stjo0m.png);*/
 }
 
 .sfdm{
+	background-size:100%;
+	background-repeat:no-repeat;
 	background-image: url(../img/sfdm00.jpg);
 	/*background-image: url(../img/stjo0m.png);*/
 }
