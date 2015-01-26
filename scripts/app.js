@@ -772,7 +772,7 @@ function setHoverUVIA() {
 			TweenLite.to(bannerUvia, .6, { delay:.18, y:-65, autoAlpha:1, ease:"easeOutExpo"});
 
 			var briefUvia = $('#frame11').contents().find("#bbuvia");
-			TweenLite.to(briefUvia, .6, { delay:.18, y:65, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(briefUvia, .6, { delay:.18, y:100, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
