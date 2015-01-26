@@ -219,7 +219,7 @@ p{
 #projectLogoTextmisc{
 		z-index: 50;
 		position:relative;
-		top:320px;
+		top:330px;
 		left:38%;
 		font-family:'Montserrat';
 		font-size: 12pt;
@@ -527,7 +527,7 @@ p{
 .misc00{
 	z-index: 10;
 	position: relative;	
-	top:200px;
+	top:210px;
 	margin:0 auto;
 	/*left:50px;*/
 	width:70px;
