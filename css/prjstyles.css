@@ -150,8 +150,9 @@ p{
 	margin:0 auto;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	/*border:1px solid blue;*/
+	border:1px solid blue;
 }
+
 
 	.batn{
 		width:100%;
@@ -389,6 +390,20 @@ p{
 	border:1px solid red;
 
 }*/
+
+.gs20-0{
+	z-index: 10;
+	position: relative;	
+	top:100px;
+	margin:0 auto;
+	width:840px;
+	height:100%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/gs20-00.png);
+	/*border:1px solid red;*/
+}
+
 
 .batn0{
 	z-index: 10;
