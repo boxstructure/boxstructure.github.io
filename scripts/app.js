@@ -699,10 +699,10 @@ function setHoverKYRT() {
 			click: function(){
 			
 			var logoKyrt = $('#frame10').contents().find("#projectLogoTextkyrt");
-			TweenLite.to(logoKyrt, .5, { delay:.3, x:50%, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoKyrt, .5, { delay:.3, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desKyrt = $('#frame10').contents().find("#btKyrt");
-			TweenLite.to(desKyrt, .5, { delay:.3, x:50%, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desKyrt, .5, { delay:.3, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
