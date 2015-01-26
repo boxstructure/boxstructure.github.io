@@ -377,7 +377,7 @@ function setHoverSLRV() {
 			click: function(){
 
 			var logoSlrv = $('#frame3').contents().find(".projectLogo.Lslrv");
-			TweenLite.to(logoSlrv, .7, { delay:.1, scale:1.2, x:30,y:-140, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoSlrv, .7, { delay:.1, scale:1.2, x:50,y:-110, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desSlrv = $('#frame3').contents().find("#btSlrv");
 			TweenLite.to(desSlrv, .7, { delay:.1, y:-100, autoAlpha:1, ease:"easeOutExpo"});
