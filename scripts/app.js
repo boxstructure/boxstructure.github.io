@@ -769,10 +769,10 @@ function setHoverUVIA() {
 			click: function(){
 			
 			var bannerUvia = $('#frame11').contents().find(".projectBanner.uvia");
-			TweenLite.to(bannerUvia, .7, { delay:.18, y:-65, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bannerUvia, .6, { delay:.18, y:-65, autoAlpha:1, ease:"easeOutExpo"});
 
 			var briefUvia = $('#frame11').contents().find("#bbuvia");
-			TweenLite.to(briefUvia, .7, { delay:.18, y:65, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(briefUvia, .6, { delay:.18, y:65, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
