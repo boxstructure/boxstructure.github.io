@@ -698,8 +698,8 @@ function setHoverKYRT() {
 
 			click: function(){
 			
-			var briefKyrt = $('#frame10').contents().find(".projectBrief");
-			TweenLite.to(briefKyrt, .35, { y:-100, autoAlpha:0, ease:"easeOutExpo"});
+			var logoKyrt = $('#frame10').contents().find("#projectLogoTextkyrt");
+			TweenLite.to(logoKyrt, .35, { y:-100, autoAlpha:0, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
