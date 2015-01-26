@@ -219,11 +219,11 @@ p{
 #projectLogoTextuvia{
 		z-index: 50;
 		position:absolute;
-		top:239px;
+		top:224px;
 		/*top:195px;*/
-		left:130px;
+		left:195px;
 		font-family:'Raleway';
-		font-size: 60pt;
+		font-size: 48pt;
 		font-weight: 700;
 		color:#244182;
 		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
@@ -366,15 +366,15 @@ p{
 #btUvia{
 	z-index: 50;
 	position:absolute;
-	width:250px;
+	width:240px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:255px;
-	left:645px;
+	top:237px;
+	left:620px;
 	/*left:140px;*/
-	color:#244182;
+	color:#000;
 	font-family: 'Raleway';
 	font-weight:700;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.2em;
 	/*opacity: .7;*/
 	/*border:1px solid blue;*/
@@ -512,27 +512,14 @@ p{
 	/*border:1px solid orange;*/
 }
 
-/*.co2w00{
-	z-index: 0;
-	position: absolute;	
-	top:0px;
-	right:70px;
-	width:870px;
-	height:450px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-image: url(../img/co2w01.jpg);
-	border:1px solid red;
-
-}*/
 
 .uvia0{
 	z-index: 10;
 	position: relative;	
-	top:110px;
+	top:120px;
 	margin:0 auto;
 	/*left:50px;*/
-	width:250px;
+	width:200px;
 	/*height:450px;*/
 	height:800px;
 	background-size: 100% auto;
