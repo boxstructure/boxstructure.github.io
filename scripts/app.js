@@ -771,8 +771,8 @@ function setHoverUVIA() {
 			var bannerUvia = $('#frame11').contents().find(".projectBanner.uvia");
 			TweenLite.to(bannerUvia, .7, { delay:.18, y:-65, autoAlpha:1, ease:"easeOutExpo"});
 
-			// var desKyrt = $('#frame10').contents().find("#btKyrt");
-			// TweenLite.to(desKyrt, .7, { delay:.18, x:280, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			var briefUvia = $('#frame11').contents().find("#bbuvia");
+			TweenLite.to(briefUvia, .7, { delay:.18, y:65, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
