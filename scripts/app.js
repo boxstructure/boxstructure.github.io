@@ -431,10 +431,10 @@ function setHoverCO2W() {
 			click: function(){
 
 			var logoCo2w = $('#frame4').contents().find(".projectLogo.Lco2w");
-			TweenLite.to(logoCo2w, .7, { delay:.2, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoCo2w, .7, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desCo2w = $('#frame4').contents().find("#btCo2w");
-			TweenLite.to(desCo2w, .7, { delay:.2, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desCo2w, .7, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 
 			setTimeout( function(){
