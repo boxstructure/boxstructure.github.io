@@ -375,6 +375,14 @@ function setHoverSLRV() {
 			},
 
 			click: function(){
+
+			var logoSlrv = $('#frame3').contents().find(".projectLogo.Lslrv");
+			TweenLite.to(logoSlrv, .7, { delay:.1, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+
+			var desSlrv = $('#frame3').contents().find("#btCo2w");
+			TweenLite.to(desSlrv, .7, { delay:.1, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+
+
 			setTimeout( function(){
 
 			$(mainTemplate).css('z-index', 0);}, 200);
