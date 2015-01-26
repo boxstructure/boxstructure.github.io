@@ -702,7 +702,7 @@ function setHoverKYRT() {
 			TweenLite.to(logoKyrt, .5, { delay:.3, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desKyrt = $('#frame10').contents().find("#btKyrt");
-			TweenLite.to(desKyrt, .5, { delay:.3, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desKyrt, .5, { delay:.3, x:280, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
