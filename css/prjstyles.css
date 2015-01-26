@@ -216,6 +216,18 @@ p{
 		background-color: #6cbde8;
 	}
 
+#projectLogoTextmisc{
+		z-index: 50;
+		position:relative;
+		top:330px;
+		left:36%;
+		font-family:'Montserrat';
+		font-size: 14pt;
+		font-weight: 400;
+		color:#7f7f7f;
+		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
+}
+
 #projectLogoTextuvia{
 		z-index: 50;
 		position:absolute;
@@ -512,6 +524,20 @@ p{
 	/*border:1px solid orange;*/
 }
 
+.misc00{
+	z-index: 10;
+	position: relative;	
+	top:200px;
+	margin:0 auto;
+	/*left:50px;*/
+	width:80px;
+	/*height:450px;*/
+	height:800px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-image: url(../img/misc00logo.png);
+	/*border:1px solid red;*/
+}
 
 .uvia0{
 	z-index: 10;
@@ -645,6 +671,13 @@ ul {
 	height:150px;
 	margin-left:0px;
 	/*border:2px solid red;*/
+}
+
+#bbmisc{
+	top:95px;
+	left:65px;
+	/*background-color:rgba(255,255,255,0.3);*/
+	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
 
 #bbuvia{
