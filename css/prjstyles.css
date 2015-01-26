@@ -219,7 +219,7 @@ p{
 #projectLogoTextuvia{
 		z-index: 50;
 		position:absolute;
-		top:204px;
+		top:214px;
 		/*top:195px;*/
 		left:195px;
 		font-family:'Raleway';
@@ -368,7 +368,7 @@ p{
 	position:absolute;
 	width:240px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:217px;
+	top:227px;
 	left:620px;
 	/*left:140px;*/
 	color:#000;
@@ -516,7 +516,7 @@ p{
 .uvia0{
 	z-index: 10;
 	position: relative;	
-	top:100px;
+	top:110px;
 	margin:0 auto;
 	/*left:50px;*/
 	width:200px;
