@@ -379,10 +379,10 @@ function setHoverSLRV() {
 			click: function(){
 
 			var logoSlrv = $('#frame3').contents().find(".projectLogo.Lslrv");
-			TweenLite.to(logoSlrv, .7, { delay:.18, scale:1.2, x:40,y:-105, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoSlrv, .6, { delay:.18, scale:1.2, x:40,y:-105, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desSlrv = $('#frame3').contents().find("#btSlrv");
-			TweenLite.to(desSlrv, .7, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desSlrv, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 
 			setTimeout( function(){
@@ -433,10 +433,10 @@ function setHoverCO2W() {
 			click: function(){
 
 			var logoCo2w = $('#frame4').contents().find(".projectLogo.Lco2w");
-			TweenLite.to(logoCo2w, .7, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoCo2w, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desCo2w = $('#frame4').contents().find("#btCo2w");
-			TweenLite.to(desCo2w, .7, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desCo2w, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 
 			setTimeout( function(){
@@ -717,10 +717,10 @@ function setHoverKYRT() {
 			click: function(){
 			
 			var logoKyrt = $('#frame10').contents().find("#projectLogoTextkyrt");
-			TweenLite.to(logoKyrt, .7, { delay:.18, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoKyrt, .6, { delay:.18, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desKyrt = $('#frame10').contents().find("#btKyrt");
-			TweenLite.to(desKyrt, .7, { delay:.18, x:280, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desKyrt, .6, { delay:.18, x:280, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
