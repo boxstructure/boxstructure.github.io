@@ -719,7 +719,7 @@ function setHoverKYRT() {
 			click: function(){
 			
 			var logoKyrt = $('#frame10').contents().find("#projectLogoTextkyrt");
-			TweenLite.to(logoKyrt, .6, { delay:.18, x:300, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(logoKyrt, .6, { delay:.18, x:310, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desKyrt = $('#frame10').contents().find("#btKyrt");
 			TweenLite.to(desKyrt, .6, { delay:.18, x:280, y:-100, autoAlpha:1, ease:"easeOutExpo"});
