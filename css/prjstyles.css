@@ -123,7 +123,7 @@ p{
 }
 #kyrtGround{
 	position: absolute;
-	top:368px;
+	top:364px;
 	width:100%;
 	height:300px;
 	background-color: #a6c879;
@@ -191,7 +191,8 @@ p{
 	}
 
 	.htwr{
-		/*height: 400px;*/
+		height: 400px;
+		/*border:1px solid red;*/
 	}
 
 	.flar{
@@ -220,17 +221,19 @@ p{
 		z-index: 50;
 		position:relative;
 		top:330px;
-		left:38%;
+		margin:0 auto;
+		width:600px;
+		text-align: center;
 		font-family:'Montserrat';
 		font-size: 12pt;
 		font-weight: 400;
 		color:#7f7f7f;
-		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
+		/*border:1px solid red;*/
 }
 
 #projectLogoTextuvia{
 		z-index: 50;
-		position:absolute;
+		position:relative;
 		top:214px;
 		/*top:195px;*/
 		left:195px;
@@ -245,8 +248,9 @@ p{
 #projectLogoTextkyrt{
 		z-index: 50;
 		position:relative;
-		top:195px;
-		left:2px;
+		top:200px;
+		margin:0 auto;
+		left:10px;
 		font-family:'Montserrat';
 		font-size: 22pt;
 		font-weight: 700;
@@ -259,8 +263,10 @@ p{
 #projectLogoTextgs20{
 		z-index: 50;
 		position:relative;
-		top:190px;
-		left:38.5%;
+		bottom:205px;
+		width:300px;
+		margin:0 auto;
+		text-align: center;
 		font-family:'Montserrat';
 		font-size: 22pt;
 		font-weight: 400;
@@ -268,12 +274,16 @@ p{
 		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
 		background-size:100%;
 		background-repeat:no-repeat;
+		/*border:1px solid green;*/
 }
 
 #projectLogoTextbatn{
-		position:absolute;
-		top:230px;
-		left:38.5%;
+		position:relative;
+		top:240px;
+		right:18px;
+		margin:0 auto;
+		width:300px;
+		/*left:38.5%;*/
 		font-family:'Montserrat';
 		font-size: 28pt;
 		font-weight: 400;
@@ -281,12 +291,16 @@ p{
 		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
 		background-size:100%;
 		background-repeat:no-repeat;
+		/*border:1px solid red;*/
 }
 
 #projectLogoTexthtwr{
-		position:absolute;
-		top:220px;
-		left:367px;
+		position:relative;
+		top:240px;
+		width:500px;
+		left:60px;
+		text-align: center;
+		margin:0 auto;
 		font-family:'Open Sans';
 		font-size: 28pt;
 		font-weight: 500;
@@ -298,9 +312,11 @@ p{
 
 
 #projectLogoTextflar{
-		position:absolute;
-		top:180px;
-		left:45px;
+		position:relative;
+		top:200px;
+		right:360px;
+		margin:0 auto;
+		width:50px;
 		font-family:'lobster';
 		font-size: 70pt;
 		font-weight: 500;
@@ -310,6 +326,8 @@ p{
 }
 
 .projectLogo{
+	position:relative;
+	margin:0 auto;
 	z-index:15;
 	width: 400px;
 	height:100px;
@@ -317,10 +335,8 @@ p{
 }
 
 	.Lgs20{
-		/*z-index: 100;*/
-		position:absolute;
 		top:240px;
-		left:46%;
+		margin:0 auto;
 		width:110px;
 		height:100%;
 		background-size:100%;
@@ -328,12 +344,9 @@ p{
 		background-image: url(../img/gs20logo.png);
 	}
 
-
-
 	.Lco2w{
-		position:absolute;
 		top:200px;
-		left:70px;
+		right:250px;
 		font-family: Roboto;
 		font-weight: 500; 
 		font-size: 20pt;
@@ -344,9 +357,8 @@ p{
 	}
 
 	.Lsjvc{
-		position:relative;
-		top:205px;
-		left:30px;
+		top:215px;
+		right:255px;
 		background-size:100%;
 		background-repeat:no-repeat;
 		background-image: url(../img/stjo0logo.png);
@@ -357,11 +369,11 @@ p{
 		font-size: 32pt;
 		font-weight: 700;
 		color:#B71C1C;
-		position:absolute;
+		width:370px;
+		height:50px;
+		right:300px;
 		top:190px;
-		left:0px;
-		background-size:100%;
-		background-repeat:no-repeat;
+		/*border:1px solid red;*/
 	}
 
 .projectSections {
@@ -371,22 +383,22 @@ p{
 }
 
 .projectBannerText{
-
+	position:relative;
+	margin:0 auto;
 	/*border:2px solid green;*/
 }
 
 #btUvia{
 	z-index: 50;
-	position:absolute;
-	width:240px;
+	width:280px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:227px;
-	left:620px;
+	top:147px;
+	left:275px;
 	/*left:140px;*/
 	color:#000;
 	font-family: 'Raleway';
 	font-weight:700;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.2em;
 	/*opacity: .7;*/
 	/*border:1px solid blue;*/
@@ -394,11 +406,12 @@ p{
 
 #btKyrt{
 	z-index: 50;
-	position:absolute;
+	position:relative;
 	width:420px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:235px;
-	left:4px;
+	top:205px;
+	right:268px;
+	margin:0 auto;
 	color:#000;
 	font-family: 'Montserrat';
 	font-weight:400;
@@ -410,26 +423,26 @@ p{
 
 #btGs20{
 	z-index: 50;
-	position:absolute;
 	width:420px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:360px;
-	left:33.5%;
+	bottom:75px;
 	color:#000;
+	text-align: center;
 	font-family: 'Montserrat';
 	font-weight:400;
 	font-size: 14px;
 	line-height: 1.2em;
 	opacity: 1;
+	/*border:1px solid red;*/
 }
 
 #btBatn{
-	position:relative;
 	width:420px;
 	height:100px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:280px;
-	left:38.5%;
+	top:240px;
+	left:44px;
+	margin:0 auto;
 	color:#fff;
 	font-family: 'Montserrat';
 	font-weight:400;
@@ -440,12 +453,12 @@ p{
 
 #btHtwr{
 	position:relative;
-	width:320px;
-	height:100px;
+	width:400px;
 	text-align: right;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
-	top:273px;
-	left:420px;
+	top:250px;
+	left:48px;
+	margin:0 auto;
 	color:#fff;
 	font-family: 'Open Sans';
 	font-weight:400;
@@ -457,12 +470,12 @@ p{
 
 
 #btFlar{
-	position:relative;
 	width:280px;
 	height:100px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
-	top:280px;
-	left:70px;
+	top:190px;
+	right:220px;
+	margin:0 auto;
 	color:#fff;
 	font-family: 'Roboto Slab';
 	font-weight:400;
@@ -472,12 +485,11 @@ p{
 
 #btCo2w{
 	z-index: 20;
-	position:absolute;
 	width:300px;
 	height:100px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.5);
-	top:270px;
-	left:70px;
+	top:170px;
+	right:300px;
 	color:#fff;
 	font-family: 'Open Sans';
 	font-weight:400;
@@ -487,32 +499,31 @@ p{
 }
 
 #btSjvc{
-	position:relative;
 	width:350px;
 	height:100px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
-	top:180px;
-	left:30px;
+	top:185px;
+	right:280px;
 	color:#fff;
 	font-family: 'Open Sans';
 	font-weight:400;
 	font-size: 16px;
-	line-height: 1.5em;
+	line-height: 1.3em;
 	/*line-height: 1.5em;*/
 }
 
 #btSlrv{
-	position:relative;
 	width:250px;
 	height:100px;
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
-	top:240px;
-	left:0px;
+	top:190px;
+	right:360px;
 	color:#000;
 	font-family: 'Open Sans';
-	font-weight:400;
+	font-weight:700;
 	font-size: 14px;
 	line-height: 1em;
+	opacity: .5;
 	/*line-height: 1.5em;*/
 }
 
@@ -542,7 +553,7 @@ p{
 .uvia0{
 	z-index: 10;
 	position: relative;	
-	top:110px;
+	top:70px;
 	margin:0 auto;
 	/*left:50px;*/
 	width:200px;
@@ -557,8 +568,9 @@ p{
 .kyrt0{
 	z-index: 10;
 	position: relative;	
-	top:20px;
+	top:0px;
 	margin:0 auto;
+	left:50px;
 	width:860px;
 	/*height:450px;*/
 	height:100%;
@@ -572,7 +584,7 @@ p{
 .gs20-0{
 	z-index: 10;
 	position: relative;	
-	top:100px;
+	bottom:315px;
 	margin:0 auto;
 	left:10px;
 	width:830px;
@@ -587,9 +599,11 @@ p{
 
 .batn0{
 	z-index: 10;
-	position: absolute;	
-	top:0px;
-	left:22.5%;
+	position: relative;	
+	right:300px;
+	bottom:150px;
+	/*left:22.5%;*/
+	margin:0 auto;
 	width:165px;
 	height:100%;
 	background-size: 100% auto;
@@ -599,10 +613,11 @@ p{
 
 .htwr0{
 	z-index: 10;
-	position: absolute;	
-	top:225px;
-	right:100px;
-	width:110px;
+	position: relative;	
+	top:155px;
+	margin:0 auto;
+	left:320px;
+	width:90px;
 	height:100%;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -695,7 +710,7 @@ ul {
 }
 
 #bbco2w{
-	top:495px;
+	top:295px;
 	left:103px;
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
@@ -733,6 +748,10 @@ ul {
 	/*background-color:rgba(255,255,255,0.5);*/
 	/*box-shadow: 0 0 15px 15px rgba(255,255,255,0.5);*/
 
+}
+
+#uviaOverview{
+	top:-160px;
 }
 
 #sjvcOverview{
