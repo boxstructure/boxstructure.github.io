@@ -120,8 +120,6 @@ p{
 }
 
 
-
-
 .projectBanner{
 	position:relative;
 	z-index: 10;
@@ -194,11 +192,15 @@ p{
 	/*border:2px solid green;*/
 }
 
+.projectBannerSfdm{
+	position:relative;
+	z-index: 10;
+}
+
 .btempSfdm2{
 	/*z-index: 10000;*/
  	bottom:250px;
  	margin:0 auto;
-
 	width:450px;
 	/*height:100px;*/
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
@@ -223,6 +225,7 @@ p{
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	/*border:2px solid green;*/
 }
+
 
 
 .blackout{
