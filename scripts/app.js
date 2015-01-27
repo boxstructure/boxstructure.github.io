@@ -824,7 +824,7 @@ function setHoverMISC() {
 			click: function(){
 			
 			var bannerMisc = $('#frame12').contents().find(".projectBanner.misc");
-			TweenLite.to(bannerMisc, .6, { delay:.18, y:-20, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bannerMisc, .6, { delay:.18, y:-50, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
