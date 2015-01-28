@@ -108,6 +108,7 @@ html, body{
 	height:190px;
 	border-radius: 2px;
 	box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.4);
+	background-repeat:repeat;
 	background-image: url(../img/cover-01-top.png);
 }
 
@@ -338,6 +339,93 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
    Tabs styles
    ========================================================================== */
 
+.tTextC{
+	position:absolute;
+	top:5px;
+	left:5px;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 13pt;
+	text-align: center;
+	width:22px;
+	/*border:1px solid blue;*/
+}
+.tTextS{
+	position:absolute;
+	top:22px;
+	left:5px;
+	width:22px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 4pt;
+	text-align: right;
+	color:#777777;
+	/*border:1px solid red;*/
+}
+
+.tBar{
+	position:absolute;
+	bottom:0px;
+	left:31px;
+	width:4px;
+	height:30px;
+	
+}
+
+.tTextN{
+	position:relative;
+	top:4px;
+	left:32px;
+	width:125px;
+	text-align: right;
+	font-family: Amatic SC;
+	font-weight: 500;
+	font-size: 15pt;
+	/*opacity: .7;*/
+	/*border:1px solid red;*/
+}
+
+#barOrange{
+	background-color:#ed7021;
+}
+
+#barRed1{
+	background-color:#d91f26;
+}
+
+#barRed2{
+	background-color:#c4222c;
+}
+
+#barNavy{
+	background-color:#232e66;
+}
+
+#barGreen{
+	background-color:#6cb845;
+}
+
+#barBlue{
+	background-color:#3f74b4;
+}
+
+#barYellow{
+	background-color:#ffcf00;
+}
+
+#barPink{
+	background-color:#E57373;
+}
+
+#barBlack{
+	background-color:#000;
+}
+
+
+.tBg{
+	background-color: #efefef;
+} 
+
 
 .tab {
 	/*z-index: 500;*/
@@ -350,9 +438,7 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	background-position: center;*/
 	cursor:pointer;
 	/*margin:40px auto;*/
-	
 }
-
 
 .tabImg {
 	/*z-index: 500;*/
@@ -400,6 +486,7 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 /* =============================================================================
    Tab styles Category: chronological;
    ========================================================================== */
+
 
 
 .tSfdm{
