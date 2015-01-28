@@ -428,7 +428,7 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 
 
 .tab {
-	/*z-index: 500;*/
+	z-index: 500;
 	position:relative;
 	width:160px;
 	height:30px;
@@ -494,17 +494,9 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-.tSfdmImg{
-	background-image: url(../img/tab-sfdm.png);
-} 
-
 .tRice{
 	top: 500px;
 	left: 500px;
-} 
-
-.tRiceImg{
-	background-image: url(../img/tab-rice.png);
 } 
 
 .tMisc{
@@ -512,36 +504,23 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-.tMiscImg{
-	background-image: url(../img/tab-misc.png);
-} 
 
 .tSlrv{
 	top: 500px;
 	left: 500px;
 } 
 
-.tSlrvImg{
-	background-image: url(../img/tab-slrv.png);
-} 
 
 .tGs20{
 	top: 500px;
 	left: 500px;
 } 
 
-.tGs20Img{
-	background-image: url(../img/tab-gs20.png);
-} 
 
 .tHtwr{
 	top: 500px;
 	left: 500px;
 }
-
-.tHtwrImg{
-	background-image: url(../img/tab-htwr.png);
-} 
 
 
 .tCo2w{
@@ -549,19 +528,9 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-
-.tCo2wImg{
-	background-image: url(../img/tab-co2w.png);
-} 
-
-
 .tSjvc{
 	top: 500px;
 	left: 500px;
-} 
-
-.tSjvcImg{
-	background-image: url(../img/tab-sjvc.png);
 } 
 
 .tKyrt{
@@ -569,17 +538,9 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-.tKyrtImg{
-	background-image: url(../img/tab-kyrt.png);
-} 
-
 .tUvia{
 	top: 500px;
 	left: 500px;
-} 
-
-.tUviaImg{
-	background-image: url(../img/tab-uvia.png);
 } 
 
 .tBatn{
@@ -587,133 +548,10 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-.tBatnImg{
-	background-image: url(../img/tab-batn.png);
-} 
-
 .tFlar{
 	top: 500px;
 	left: 500px;
 } 
-
-.tFlarImg{
-	background-image: url(../img/tab-flar.png);
-} 
-
-
-/*
-.tSfdm{
-	top: 100px;
-	left: 215px;
-} 
-
-.tSfdmImg{
-	background-image: url(../img/tab-sfdm.png);
-} 
-
-.tRice{
-	top: 130px;
-	left: 215px;
-} 
-
-.tRiceImg{
-	background-image: url(../img/tab-rice.png);
-} 
-
-.tMisc{
-	top: 160px;
-	left: 215px;
-} 
-
-.tMiscImg{
-	background-image: url(../img/tab-misc.png);
-} 
-
-.tSlrv{
-	top: 10px;
-	left: 405px;
-} 
-
-.tSlrvImg{
-	background-image: url(../img/tab-slrv.png);
-} 
-
-.tGs20{
-	top: 40px;
-	left: 405px;
-} 
-
-.tGs20Img{
-	background-image: url(../img/tab-gs20.png);
-} 
-
-.tHtwr{
-	top: 70px;
-	left: 405px;
-}
-
-.tHtwrImg{
-	background-image: url(../img/tab-htwr.png);
-} 
-
-
-.tCo2w{
-	top: -80px;
-	left: 595px;
-} 
-
-
-.tCo2wImg{
-	background-image: url(../img/tab-co2w.png);
-} 
-
-
-.tSjvc{
-	top: -50px;
-	left: 595px;
-} 
-
-.tSjvcImg{
-	background-image: url(../img/tab-sjvc.png);
-} 
-
-.tKyrt{
-	top: -20px;
-	left: 595px;
-} 
-
-.tKyrtImg{
-	background-image: url(../img/tab-kyrt.png);
-} 
-
-.tUvia{
-	top: -170px;
-	left: 785px;
-} 
-
-.tUviaImg{
-	background-image: url(../img/tab-uvia.png);
-} 
-
-.tBatn{
-	top: -140px;
-	left: 785px;
-} 
-
-.tBatnImg{
-	background-image: url(../img/tab-batn.png);
-} 
-
-.tFlar{
-	top: -110px;
-	left: 785px;
-} 
-
-.tFlarImg{
-	background-image: url(../img/tab-flar.png);
-} */
-
-
 
 
 .clip{

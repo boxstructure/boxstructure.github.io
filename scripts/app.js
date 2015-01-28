@@ -187,7 +187,7 @@ function setHoverWorkType() {
 			
 			TweenLite.to(tabbatn, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabslrv, .5, { x:-95, y:-250, autoAlpha:1, ease:"easeInQuart"});
-			
+		
 			TweenLite.to(tabgs20, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabkyrt, .5, { x:95, y:-580, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabuvia, .5, { x:95, y:-550, autoAlpha:1, ease:"easeInQuart"});
