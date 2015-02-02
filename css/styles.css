@@ -108,8 +108,13 @@ html, body{
 	height:190px;
 	border-radius: 2px;
 	box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.4);
-	background-repeat:repeat;
-	background-image: url(../img/cover-00-top.png);
+	background-repeat:cover;
+	overflow:hidden;
+	background-image: url(../img/cover-00-top.jpg);
+}
+
+#topfox{
+	z-index: -1;
 }
 
 .bottom{
@@ -154,7 +159,7 @@ html, body{
 	/*background-position: 0 340px; */
 	background-size:100% auto;
 	background-repeat: repeat-y;
-	background-image: url(../img/cover-02-bottombg.png);
+	background-image: url(../img/cover-02-bottombg.jpg);
 	/*border:1px solid blue;*/
 }
 
