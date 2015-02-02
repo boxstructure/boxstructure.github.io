@@ -140,6 +140,20 @@ function setHoverAbout() {
 	setHoverAbout();
 
 
+function setHoverWork() {
+	menuWork
+		.off('mouseover mouseleave mousedown mouseup')
+		.on({
+			mouseover: function(){
+			
+			TweenLite.to(menuWork, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(menuWork, .2, { scaleX:1, scaleY:1});
+			}
+        });
+	}
 
 ////////////////////////////////////////////////////////Tab Category///////////
 
