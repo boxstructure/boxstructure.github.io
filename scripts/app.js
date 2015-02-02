@@ -142,11 +142,11 @@ function setHoverAbout() {
 
 function setHoverWork() {
 	menuWork
-		.off('mouseover mouseleave mousedown mouseup')
+		.off('mouseover mouseleave')
 		.on({
 			mouseover: function(){
 			
-			TweenLite.to(menuWork, .2, { scaleX:1.05, scaleY:1.05});
+			TweenLite.to(menuWork, .2, { scaleX:5.05, scaleY:5.05});
 			},
 
 			mouseleave: function(){
