@@ -185,6 +185,8 @@ p{
 	/*border:1px solid blue;*/
 }
 
+
+
 	.batn{
 		width:100%;
 		background-color: #E57373;
@@ -216,6 +218,8 @@ p{
 	.sjvc{
 		background-color: #6cbde8;
 	}
+
+
 
 #projectLogoTextmisc{
 		z-index: 50;
@@ -387,6 +391,7 @@ p{
 	margin:0 auto;
 	/*border:2px solid green;*/
 }
+
 
 #btUvia{
 	z-index: 50;
@@ -738,6 +743,17 @@ ul {
 	/*border:2px solid green;*/
 }
 
+.projectTextabout{
+	position: relative;
+	width:500px;
+	top:60px;
+	/*height:405px;*/
+	margin:0 auto;
+	/*border:2px solid green;*/
+}
+
+
+
 #co2wOverview{
 	position: relative;
 	font-weight: 400;
@@ -753,6 +769,7 @@ ul {
 #uviaOverview{
 	bottom:50px;
 }
+
 
 #sjvcOverview{
 	top:-55px;
@@ -774,6 +791,12 @@ ul {
 	width:100%;
 	background-color: #efefef;
 }
+
+#aboutPB1{
+	top:80px;
+	height:1200px;
+}
+
 
 #sjvcPB1{
 	top:60px;
@@ -837,7 +860,7 @@ ul {
 Back to top button 
 */
 #back-top {
-	z-index: 15;
+	z-index: 150;
 	position: fixed;
 	bottom: 30px;
 	margin-left: 90%;

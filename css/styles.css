@@ -288,6 +288,24 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
  	/*border:1px solid blue;*/
 }
 
+.navback2{
+	position:relative;
+	list-style: none;
+    padding:0px;
+	text-align:right;
+	margin-top: 62px;
+	left:825px;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size:.9em;
+	opacity: .6;
+	display:inline-block;
+ 	cursor: pointer;
+ 	/*border:1px solid blue;*/
+}
+
+
+
 .subtitle{
 	position:absolute;
 	/*list-style: none;*/
@@ -642,6 +660,8 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	margin-left:0px;
 	/*border:2px solid green;*/
 }
+
+
 
 /*@media all and (max-width:500px) {
     .wrap{

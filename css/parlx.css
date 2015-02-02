@@ -1,0 +1,127 @@
+@font-face {font-family: NexaBold;
+    src: url('../font/Nexa_Bold.eot');
+    src: url('../font/Nexa_Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Nexa_Bold.woff') format('woff'),
+         url('../font/Nexa_Bold.ttf') format('truetype'),
+         url('../font/Nexa_Bold.svg#OpenSansLight') format('svg');
+}
+
+
+*[class^="prlx"] {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.prlx-1{ 
+	/*background-size: 100% auto;*/
+	background-size: cover;
+	/*background-position: 0px 1000px;*/
+	/*top:1000px;*/
+	background-repeat: repeat-y;
+	background-image: url(../img/bg2.jpg);
+}
+
+.prlx-2{ 
+	margin-top: 400px;
+	/*background-size: 100% auto;*/
+	background-size: cover;
+	/*background-position: 0px 1000px;*/
+	/*top:1000px;*/
+	background-repeat: repeat-y;
+	background-image: url(../img/bg.jpg);
+}
+
+.prlx-3{ 
+	margin-top: 800px;
+	/*background-size: 100% auto;*/
+	background-size: cover;
+	/*background-position: 0px 500px;*/
+	/*top:1000px;*/
+	background-repeat: repeat;
+	background-image: url(../img/bg2.jpg);
+}
+
+.prlx-4{ 
+	margin-top: 1000px;
+	/*background-size: 100% auto;*/
+	background-size: cover;
+	/*background-position: 0px 500px;*/
+	/*top:1000px;*/
+	background-repeat: repeat;
+	background-image: url(../img/bg2.jpg);
+}
+
+
+
+.section-one h2{ 
+	font-family:'Montserrat';
+	font-size: 60pt;
+	font-weight: 700;
+	width:600px;
+	margin: 0 auto;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	top:130px;
+	padding:10px;
+	/*background-color: #232323;*/
+}
+
+.section-three h2, .section-five h2{ 
+	font-family:'Montserrat';
+	font-size: 60pt;
+	font-weight: 700;
+	width:600px;
+	margin: 0 auto;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	top:100px;
+	padding:10px;
+	/*background-color: #232323;*/
+}
+
+.section-four h2{ 
+	font-family:'Montserrat';
+	font-size: 60pt;
+	font-weight: 700;
+	width:600px;
+	margin: 0 auto;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	top:50px;
+	padding:10px;
+	/*background-color: #232323;*/
+}
+
+.section-one, .section-three, .section-four, .section-five{
+	width: 100%; min-height: 400px;
+	position: relative;
+	overflow: hidden;
+	/*line-height: 100px;*/
+}
+
+.section-two{
+	width: 100%; min-height: 550px;
+	padding:0;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-twoL{
+	width: 100%; min-height: 750px;
+	padding:0;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-one, .section-three, .section-four, .section-five{
+}
+
+
+

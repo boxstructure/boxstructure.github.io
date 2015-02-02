@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var pageW = $('.clip').width();
 	var pageH = $('.clip').height();
 	
-	var menuAbout = $('menuAbout');
+	var menuAbout = $('#about');
 	var menuWork = $('menuWork');
 	var menuNotes = $('menuNotes');
 	var menuContact = $('menuContact');
@@ -15,6 +15,7 @@ $(document).ready(function(){
 	var bottomCover = $('.bottom');
 	var clip = $ ('.clip');
 	var screen0 = $ ('.screen');
+	var screenA = $('.zero');
 	var screen1 = $('.one');
 	var screen2 = $('.two');
 	var screen3 = $('.three');
@@ -48,11 +49,13 @@ $(document).ready(function(){
 	var tabflar = $('.tab.effectDS.tFlar');
 
 	var navback = $ ('.navback');
+	var navback2 = $ ('.navback2');
 	var mainTemplate = $ ('.template');
 
 	
 	TweenLite.set(clip, {autoAlpha:0, x:850});
 
+	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
 	TweenLite.set(screen1, {autoAlpha:0});
 	TweenLite.set(screen2, {autoAlpha:0});
 	TweenLite.set(screen3, {autoAlpha:0});
@@ -67,6 +70,7 @@ $(document).ready(function(){
 	TweenLite.set(screen12, {autoAlpha:0});
 
 	TweenLite.set(navback, {autoAlpha:0});
+	TweenLite.set(navback2, {autoAlpha:0});
 
 	TweenLite.set(tabsfdm, {autoAlpha:0});
 	TweenLite.set(tabrice, {autoAlpha:0});
@@ -89,6 +93,53 @@ $(document).ready(function(){
 	$(document).on('pointermove', function(event) {
             event.preventDefault();
     });
+
+
+
+
+function setHoverAbout() {
+	menuAbout
+		.off('mouseover mouseleave mousedown mouseup')
+		.on({
+			mouseover: function(){
+			
+			TweenLite.to(menuAbout, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(menuAbout, .2, { scaleX:1, scaleY:1});
+			},
+
+
+			mousedown: function(){
+			TweenLite.to(menuAbout, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+			},
+
+			mouseup: function(){
+
+			setTimeout( function(){
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(menuAbout, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback2, .5, {autoAlpha:.6});
+			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screenA, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
+
+			$(this).unbind("mouseover mouseleave");
+			$(setHoverNavback2).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(menuAbout).click(function(){
+   	setHoverAbout();
+	});
+	setHoverAbout();
+
+
 
 ////////////////////////////////////////////////////////Tab Category///////////
 
@@ -942,6 +993,87 @@ function setHoverNavback() {
 	});
 	setHoverNavback();
 
+
+
+			$(document).ready(function() {
+				$(window).scroll(function(){
+					$('*[class^="prlx"]').each(function(r){
+						var pos = $(this).offset().top;
+						var scrolled = $(window).scrollTop();
+				    	$('*[class^="prlx"]').css('top', -(scrolled * 0.5) + 'px');			
+				    });
+				});
+			});
+
+
+function setHoverNavback2() {
+	navback2
+		.off('mouseover mouseleave mousedown mouseup')
+		.on({
+			mouseover: function(){
+
+				TweenLite.to(navback2, .2, { scaleX:1.05, scaleY:1.05});
+				},
+
+			mouseleave: function(){
+
+				TweenLite.to(navback2, .2, { scaleX:1, scaleY:1});
+				},
+
+			mousedown: function(){
+				TweenLite.to(navback2, .175, {scaleX:1, scaleY:1, ease:"easeOutExpo"});
+
+				$(this).unbind("mouseover mouseleave");
+				},
+
+			mouseup: function(){
+			setTimeout( function(){
+				
+				$(mainTemplate).css('z-index', 50);}, 200);
+				TweenLite.to(navback2, .1, {autoAlpha:0});
+				TweenLite.to(screen0, .5, {autoAlpha:0});
+				TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+				TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
+				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
+
+				TweenLite.set(screenA, {delay:.2, autoAlpha:0, x:-1700});
+
+				$(setHoverSJVC).bind("mouseover mouseleave");
+				$(setHoverSFDM).bind("mouseover mouseleave");
+				$(setHoverSLRV).bind("mouseover mouseleave");
+				$(setHoverCO2W).bind("mouseover mouseleave");
+				$(setHoverFLAR).bind("mouseover mouseleave");
+				$(setHoverHTWR).bind("mouseover mouseleave");
+				$(setHoverRICE).bind("mouseover mouseleave");
+				$(setHoverBATN).bind("mouseover mouseleave");
+				$(setHoverGS20).bind("mouseover mouseleave");
+				$(setHoverKYRT).bind("mouseover mouseleave");
+				$(setHoverUVIA).bind("mouseover mouseleave");
+				$(setHoverMISC).bind("mouseover mouseleave");
+
+				setTimeout( function(){
+				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+			}
+        });
+	}
+
+	$(navback2).click(function(){
+   	setHoverNavback2();
+	});
+	setHoverNavback2();
+
+
+
+$(document).ready(function() {
+$(window).scroll(function(){
+$('*[class^="prlx"]').each(function(r){
+	var pos = $(this).offset().top;
+	var scrolled = $(window).scrollTop();
+  	$('*[class^="prlx"]').css('top', -(scrolled * 0.5) + 'px');			
+	    });
+	});
+});
 
 
 
