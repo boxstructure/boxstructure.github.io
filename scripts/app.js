@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var pageH = $('.clip').height();
 	
 	var menuAbout = $('#about');
-	var menuWork = $('menuWork');
+	var menuWork = $('#work');
 	var menuNotes = $('menuNotes');
 	var menuContact = $('menuContact');
 	var menuWorkChron = $('#chronological');
