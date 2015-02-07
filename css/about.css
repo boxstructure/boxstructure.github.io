@@ -37,7 +37,7 @@
 }
 
 .prlx-3{ 
-	margin-top: 1000px;
+	margin-top: 950px;
 	/*background-size: 100% auto;*/
 	background-size: 120%;
 	/*background-position: 0px 500px;*/
@@ -47,7 +47,7 @@
 }
 
 .prlx-4{ 
-	margin-top: 1350px;
+	margin-top: 1200px;
 	/*background-size: 100% auto;*/
 	background-size: 100%;
 	/*background-position: 0px 500px;*/
@@ -141,7 +141,7 @@
 	color: #fff;
 	position: relative;
 	text-align: center;
-	top:50px;
+	top:60px;
 	padding:10px;
 	/*background-color: #232323;*/
 }
@@ -154,14 +154,14 @@
 }
 
 .section-two{
-	width: 100%; min-height: 550px;
+	width: 100%; min-height: 500px;
 	padding:0;
 	position: relative;
 	overflow: hidden;
 }
 
 .section-twoL{
-	width: 100%; min-height: 750px;
+	width: 100%; min-height: 600px;
 	padding:0;
 	position: relative;
 	overflow: hidden;
