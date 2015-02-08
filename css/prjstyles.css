@@ -166,7 +166,7 @@ p{
 }
 
 .projectBanner{
-	z-index: 10;
+	z-index: 30;
 	position: relative;	
 	width:980px;
 	height: 400px;
@@ -176,6 +176,7 @@ p{
 	background-repeat: no-repeat;
 	/*border:1px solid blue;*/
 }
+
 
 
 
@@ -194,7 +195,7 @@ p{
 	}
 
 	.co2w{
-		z-index: 0;
+		z-index:30;
 		top:0px;
 		left:-8px;
 		width:1040px;
@@ -840,7 +841,6 @@ ul {
 }
 
 #bbco2w{
-	z-index: 30;
 	top:295px;
 	left:103px;
 	/*background-color:rgba(255,255,255,0.3);*/
