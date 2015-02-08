@@ -491,7 +491,7 @@ function setHoverCO2W() {
 			TweenLite.to(desCo2w, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var briefCo2w = $('#frame4').contents().find("#bbco2w");
-			TweenLite.to(briefCo2w, .6, { delay:.18, y:1000, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(briefCo2w, .6, { delay:.18, y:950, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
