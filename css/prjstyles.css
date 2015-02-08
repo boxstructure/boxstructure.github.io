@@ -81,6 +81,18 @@ h3{
 	/*line-height:2em;*/
 	/*opacity: .6;*/
 }
+h4{
+/*	position:relative;
+	list-style: none;*/
+	margin-top: 0;
+  	font-family: Montserrat;
+	font-weight: 700;
+	font-size:24pt;
+	color:#d42027;
+	/*letter-spacing:.1em;*/
+	/*line-height:2em;*/
+	/*opacity: .6;*/
+}
 
 p{	
 	margin-top:1em;
@@ -385,6 +397,11 @@ p{
 	margin:0 auto;
 	width:980px;
 	height:1450px;
+}
+.projectSections-02{
+	/*border:2px solid green;*/
+	margin:0 auto;
+	height:450px;
 }
 
 .projectBannerText{
@@ -751,6 +768,116 @@ p{
 	background-image: url(../img/batn00.png);
 }
 
+.htwr01{
+	z-index: 10;
+	position: relative;	
+	bottom:220px;
+	/*left:0px;*/
+	margin:0 auto;
+	width:800px;
+	height:550px;
+	background-size: contain;
+	background-image: url(../img/htwr01.jpg);
+	/*border:1px solid red;*/
+}
+
+.htwr02{
+	z-index: 10;
+	position: relative;	
+	bottom:625px;
+	/*left:0px;*/
+	margin:0 auto;
+	right:240px;
+	width:500px;
+	height:550px;
+	background-size: contain;
+	background-image: url(../img/htwr02.jpg);
+	/*border:1px solid red;*/
+}
+
+.htwr03{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	bottom:440px;
+	left:300px;
+	width:400px;
+	height:450px;
+	background-size: contain;
+	background-image: url(../img/htwr03.jpg);
+	/*border:1px solid red;*/
+}
+
+.htwr04{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	bottom:560px;
+	width:650px;
+	height:550px;
+	background-size: contain;
+	background-image: url(../img/htwr04.jpg);
+	/*border:1px solid red;*/
+}
+
+.htwr05{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	bottom:620px;
+	left:0px;
+	width:950px;
+	height:450px;
+	background-size: contain;
+	background-image: url(../img/htwr05.jpg);
+	/*border:1px solid red;*/
+}
+.htwr06{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	top:140px;
+	left:80px;
+	width:950px;
+	height:450px;
+	opacity: .9;
+	background-size: contain;
+	background-image: url(../img/htwr06.png);
+	/*border:1px solid red;*/
+}
+
+.htwr07{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	bottom:680px;
+	left:0px;
+	width:1050px;
+	height:450px;
+	opacity: .9;
+	background-size: contain;
+	background-image: url(../img/htwr07.jpg);
+	/*border:1px solid red;*/
+}
+.htwr08{
+	z-index: 5;
+	position: relative;	
+	/*left:0px;*/
+	margin:0 auto;
+	bottom:850px;
+	left:45px;
+	width:1200px;
+	height:450px;
+	opacity: .9;
+	background-size: contain;
+	background-image: url(../img/htwr08.jpg);
+	/*border:1px solid red;*/
+}
 .htwr0{
 	z-index: 10;
 	position: relative;	
@@ -812,10 +939,11 @@ ul {
 	z-index: 30;
 	position: relative;
 	top:95px;
-	left: 295px;
+	margin:0 auto;
 	width:100px;
 	height:150px;
-	margin-left:0px;
+	right:370px;
+	/*margin-left:0px;*/
 	/*border:2px solid red;*/
 }
 
@@ -839,7 +967,8 @@ ul {
 
 #bbco2w{
 	top:295px;
-	left:103px;
+	right:360px;
+	/*left:10px;*/
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
@@ -860,6 +989,7 @@ ul {
 }
 
 .projectText{
+	z-index: 100;
 	position: relative;
 	left: 33%;
 	width:500px;
@@ -887,6 +1017,7 @@ ul {
 	/*background-color:rgba(255,255,255,0.5);*/
 	/*box-shadow: 0 0 15px 15px rgba(255,255,255,0.5);*/
 }
+
 #co2wFinal{
 	z-index: 20;
 	position: relative;
@@ -975,9 +1106,55 @@ ul {
 	line-height:1.5em;
 }
 
+#htwrText1{
+	z-index: 10;
+	top:80px;
+	left:20%;
+}
+
+#htwrText1sub1{
+	top:40px;
+	left:0%;
+	width:680px;
+	/*border:1px solid red;*/
+}
+
+#htwrText2{
+	z-index: 10;
+	bottom:600px;
+	left:20%;
+}
+#htwrText3{
+	z-index: 10;
+	width:650px;
+	bottom:680px;
+	left:20%;
+	/*border:1px solid red;*/
+}
+#htwrText4{
+	z-index: 10;
+	width:650px;
+	top:80px;
+	left:20%;
+	/*border:1px solid red;*/
+}
+#htwrText5{
+	z-index: 10;
+	width:500px;
+	bottom:480px;
+	left:50%;
+	/*border:1px solid red;*/
+}
+#htwrText6{
+	z-index: 10;
+	width:650px;
+	bottom: 780px;
+	left:10%;
+	/*border:1px solid red;*/
+}
+
 #co2wText1{
 	top:100px;
-
 }
 
 #uviaOverview{
@@ -987,6 +1164,19 @@ ul {
 
 #sjvcOverview{
 	top:-55px;
+}
+
+#htwrOverview{
+	z-index: 40;
+	width:360px;
+	top:-55px;
+	/*border:1px solid red;*/
+}
+#htwrOverview2{
+	z-index: 40;
+	bottom:310px;
+	width:355px;
+	left:55%;
 }
 
 .sjvc1{
@@ -1029,8 +1219,23 @@ ul {
 
 #co2wPB4{
 	bottom:380px;
-	height:680px;
+	height:680px200
 	/*border:1px solid red;*/
+}
+
+#htwrPB1{
+	bottom:690px;
+	height:710px;
+}
+
+#htwrPB2{
+	top:200px;
+	height:800px;
+}
+
+#htwrPB3{
+	bottom:550px;
+	height:800px;
 }
 
 #sjvcPB1{
