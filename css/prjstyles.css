@@ -1011,8 +1011,8 @@ ul {
 	font-weight: 400;
 	width:500px;
 	top:80px;
-	left:33%;
-	margin-left:0px;
+	margin:0 auto;
+
 	/*background-color:rgba(255,255,255,0.5);*/
 	/*box-shadow: 0 0 15px 15px rgba(255,255,255,0.5);*/
 }
@@ -1217,7 +1217,7 @@ ul {
 
 #co2wPB4{
 	bottom:380px;
-	height:680px200
+	height:680px;
 	/*border:1px solid red;*/
 }
 
