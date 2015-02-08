@@ -341,7 +341,7 @@ ul {
 }
 
 .pbRiceC{
-	top:50px;
+	bottom:212px;
 
 	/*border:1px solid red;*/
 }
@@ -383,7 +383,7 @@ ul {
 }
 
 #riceOverview{
-	top:-100px;
+	bottom:360px;
 	right:180px;
 }
 
