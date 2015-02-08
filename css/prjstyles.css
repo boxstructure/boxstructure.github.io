@@ -991,10 +991,9 @@ ul {
 .projectText{
 	z-index: 100;
 	position: relative;
-	left: 33%;
+	margin:0 auto;
 	width:500px;
 	/*height:405px;*/
-	margin-left:0px;
 	/*border:2px solid green;*/
 }
 
@@ -1109,12 +1108,11 @@ ul {
 #htwrText1{
 	z-index: 10;
 	top:80px;
-	left:20%;
+	right:150px;
 }
 
 #htwrText1sub1{
 	top:40px;
-	left:0%;
 	width:680px;
 	/*border:1px solid red;*/
 }
@@ -1122,34 +1120,34 @@ ul {
 #htwrText2{
 	z-index: 10;
 	bottom:600px;
-	left:20%;
+	right:150px;
 }
 #htwrText3{
 	z-index: 10;
 	width:650px;
 	bottom:680px;
-	left:20%;
+	right:150px;
 	/*border:1px solid red;*/
 }
 #htwrText4{
 	z-index: 10;
 	width:650px;
 	top:80px;
-	left:20%;
+	right:150px;
 	/*border:1px solid red;*/
 }
 #htwrText5{
 	z-index: 10;
 	width:500px;
 	bottom:480px;
-	left:50%;
+	left:240px;
 	/*border:1px solid red;*/
 }
 #htwrText6{
 	z-index: 10;
 	width:650px;
 	bottom: 780px;
-	left:10%;
+	right:150px;
 	/*border:1px solid red;*/
 }
 
@@ -1176,7 +1174,7 @@ ul {
 	z-index: 40;
 	bottom:310px;
 	width:355px;
-	left:55%;
+	left:200px;
 }
 
 .sjvc1{
