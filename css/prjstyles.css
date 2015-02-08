@@ -812,7 +812,7 @@ ul {
 	z-index: 30;
 	position: relative;
 	top:95px;
-	left: 65px;
+	left: 295px;
 	width:100px;
 	height:150px;
 	margin-left:0px;
@@ -821,21 +821,18 @@ ul {
 
 #bbmisc{
 	top:95px;
-	left:65px;
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
 
 #bbuvia{
 	top:-5px;
-	left:65px;
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
 
 #bbkyrt{
 	top:80px;
-	left:65px;
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
@@ -846,6 +843,8 @@ ul {
 	/*background-color:rgba(255,255,255,0.3);*/
 	/*box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);*/
 }
+
+
 
 .briefSummary{
 	font-family: Open Sans;
