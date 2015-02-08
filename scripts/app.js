@@ -488,8 +488,10 @@ function setHoverCO2W() {
 			TweenLite.to(logoCo2w, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			var desCo2w = $('#frame4').contents().find("#btCo2w");
-			TweenLite.to(desCo2w, .6, { delay:.18, y:500, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(desCo2w, .6, { delay:.18, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
+			var briefCo2w = $('#frame4').contents().find("#bbco2w");
+			TweenLite.to(briefCo2w, .6, { delay:.18, y:300, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
