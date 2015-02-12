@@ -484,7 +484,7 @@ ul {
 
 #sfdmOverview{
 	top:-100px;
-	right:180px;
+	/*right:180px;*/
 	width:500px;
 }
 
@@ -592,7 +592,7 @@ ul {
 Back to top button 
 */
 #back-top {
-	z-index: 15;
+	z-index: 150;
 	position: fixed;
 	bottom: 30px;
 	margin-left: 90%;
