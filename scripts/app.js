@@ -319,11 +319,16 @@ function setHoverSFDM() {
 		.off('mouseover mouseleave mousedown mouseup')
 		.on({
 			mouseover: function(){
+
+			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
+			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
+
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screen2, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
 			},
 
+			
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
