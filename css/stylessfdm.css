@@ -345,7 +345,7 @@ p{
 }
 .sfdm05{
 	
-	bottom:130px;
+	bottom:100px;
 	left:240px;
 	margin:0 auto;
 	width:500px;
@@ -355,7 +355,7 @@ p{
 }
 .sfdm06{
 	
-	bottom:928px;
+	bottom:900px;
 	right:280px;
 	margin:0 auto;
 	width:500px;
@@ -510,9 +510,10 @@ ul {
 	position: relative;
 	/*top:95px;*/
 	margin:0 auto;
-	width:100px;
-	height:150px;
+	width:140px;
+	height:170px;
 	right:370px;
+	padding:10px 15px;
 	/*border:2px solid red;*/
 }
 
@@ -568,7 +569,7 @@ ul {
 }
 
 #sfdmOverview{
-	bottom:150px;
+	bottom:160px;
 	left:50px;
 	width:500px;
 }
@@ -601,24 +602,24 @@ ul {
 }
 
 #sfdmText1{
-	width:350px;
-	top:100px;
-	right:310px;
+	width:330px;
+	top:250px;
+	right:340px;
 }
 #sfdmText2{
 	width:350px;
-	top:80px;
-	left:250px;
+	top:170px;
+	left:270px;
 }
 #sfdmText3{
-	width:350px;
-	top:550px;
-	right:350px;
+	width:450px;
+	top:480px;
+	right:300px;
 }
 #sfdmText4{
 	width:550px;
 	top:50px;
-	right:250px;
+
 }
 
 #ricePB1{
@@ -632,20 +633,20 @@ ul {
 }
 
 #riceText1{
-	width:350px;
-	top:120px;
-	right:310px;
+	width:320px;
+	top:220px;
+	right:330px;
 }
 #riceText2{
 	width:320px;
-	right:300px;
+	right:320px;
 	/*top:120px;*/
-	bottom:350px;
+	bottom:300px;
 }
 #riceText3{
 	width:360px;
 	left:340px;
-	top:70px;
+	top:240px;
 }
 
 #sjvcPB1{
