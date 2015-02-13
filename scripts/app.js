@@ -33,8 +33,11 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	// var sfdmBannerText2 = $('projectBannerSfdm.btempSfdm2')
-	// var sfdmBannerText2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
+
+	function(){
+		var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
+			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
+		}
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
