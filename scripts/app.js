@@ -37,7 +37,7 @@ $(document).ready(function(){
 	function(){
 		var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
 			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
-		}
+		};
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
