@@ -33,7 +33,7 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
+	var sfdmBannerText2 = $('projectBannerSfdm.btempSfdm2')
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -86,7 +86,7 @@ $(document).ready(function(){
 	TweenLite.set(tabbatn, {autoAlpha:0});
 	TweenLite.set(tabflar, {autoAlpha:0});
 
-	TweenLite.set(prjBnSFDMTemp2, {autoAlpha:0});
+	TweenLite.set(sfdmBannerText2, {autoAlpha:0});
 
 	TweenLite.set(ttlBrief, {autoAlpha:0});
 	TweenLite.set(ttlChrono, {autoAlpha:0});
@@ -339,7 +339,7 @@ function setHoverSFDM() {
 			var prjBnTemp = $('#frame2').contents().find(".projectBannerTemp");
 			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
 
-			
+			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
 			TweenLite.to(prjBnSFDMTemp2, .35, {autoAlpha:1, ease:"easeOutExpo"});
 
 
