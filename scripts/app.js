@@ -320,7 +320,7 @@ function setHoverSFDM() {
 		.on({
 			mouseover: function(){
 
-			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
+			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBannerSfdm");
 			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
 
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
