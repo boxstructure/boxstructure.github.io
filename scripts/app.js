@@ -33,6 +33,7 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
+	var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -338,7 +339,7 @@ function setHoverSFDM() {
 			var prjBnTemp = $('#frame2').contents().find(".projectBannerTemp");
 			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
 
-			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
+			
 			TweenLite.to(prjBnSFDMTemp2, .35, {autoAlpha:1, ease:"easeOutExpo"});
 
 
