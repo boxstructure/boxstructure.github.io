@@ -324,8 +324,6 @@ function setHoverSFDM() {
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
 			},
 
-			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
-			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
