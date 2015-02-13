@@ -34,7 +34,7 @@ $(document).ready(function(){
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
 	// var sfdmBannerText2 = $('projectBannerSfdm.btempSfdm2')
-	var sfdmBannerText2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
+	// var sfdmBannerText2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -87,7 +87,7 @@ $(document).ready(function(){
 	TweenLite.set(tabbatn, {autoAlpha:0});
 	TweenLite.set(tabflar, {autoAlpha:0});
 
-	TweenLite.set(sfdmBannerText2, {autoAlpha:0});
+	// TweenLite.set(sfdmBannerText2, {autoAlpha:0});
 
 	TweenLite.set(ttlBrief, {autoAlpha:0});
 	TweenLite.set(ttlChrono, {autoAlpha:0});
@@ -324,6 +324,9 @@ function setHoverSFDM() {
 			TweenLite.to(tabsfdm, .2, { scaleX:1.05, scaleY:1.05});
 			},
 
+			var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
+			TweenLite.to(prjBnSFDMTemp2, 0, {autoAlpha:0, ease:"easeOutExpo"});
+
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 			TweenLite.to(screen2, .4, { autoAlpha:0, ease:"easeOutQuint"});
@@ -339,9 +342,6 @@ function setHoverSFDM() {
 
 			var prjBnTemp = $('#frame2').contents().find(".projectBannerTemp");
 			TweenLite.to(prjBnTemp, .35, { delay:0, x:0, y:600, autoAlpha:0, ease:"easeOutExpo"});
-
-			// var prjBnSFDMTemp2 = $('#frame2').contents().find(".projectBanner");
-			// TweenLite.to(prjBnSFDMTemp2, .35, {autoAlpha:1, ease:"easeOutExpo"});
 
 
 			var briefSfdm = $('#frame2').contents().find(".projectBriefContainer");
