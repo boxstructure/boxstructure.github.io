@@ -121,6 +121,9 @@ p{
 .crice{
 	height: 5500px;
 }
+.csfdm{
+	height: 4600px;
+}
 
 .projectBanner{
 	position:relative;
@@ -155,6 +158,7 @@ p{
 	/*background-image: url(../img/stjo0m.png);*/
 }
 
+
 .projectLogo{
 	z-index:15;
 	position:relative;
@@ -173,7 +177,7 @@ p{
 
 .projectSections {
 	margin:0 auto;
-	width:980px;
+	/*width:980px;*/
 	/*border:2px solid green;*/
 }
 
@@ -299,6 +303,87 @@ p{
 	/*border:1px solid orange;*/
 }
 
+.sfdm01{
+	
+	bottom:80px;
+	left:200px;
+	margin:0 auto;
+	width:585px;
+	height:320px;
+	background-image: url(../img/sfdm01.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm02{
+	
+	bottom:65px;
+	left:70px;
+	margin:0 auto;
+	width:326px;
+	height:200px;
+	background-image: url(../img/sfdm02.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm03{
+	
+	bottom:265px;
+	left:370px;
+	margin:0 auto;
+	width:250px;
+	height:200px;
+	background-image: url(../img/sfdm03.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm04{
+	
+	bottom:150px;
+	right:240px;
+	margin:0 auto;
+	width:500px;
+	height:400px;
+	background-image: url(../img/sfdm04.gif);
+	/*border:1px solid orange;*/
+}
+.sfdm05{
+	
+	bottom:130px;
+	left:240px;
+	margin:0 auto;
+	width:500px;
+	height:800px;
+	background-image: url(../img/sfdm05.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm06{
+	
+	bottom:928px;
+	right:280px;
+	margin:0 auto;
+	width:500px;
+	height:400px;
+	background-image: url(../img/sfdm06.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm07{
+	
+	top:150px;
+	right:270px;
+	margin:0 auto;
+	width:487px;
+	height:760px;
+	background-image: url(../img/sfdm07.jpg);
+	/*border:1px solid orange;*/
+}
+.sfdm08{
+	
+	bottom:620px;
+	left:270px;
+	margin:0 auto;
+	width:500px;
+	height:760px;
+	background-image: url(../img/sfdm08.jpg);
+	/*border:1px solid orange;*/
+}
+
 .rice01{
 	
 	bottom:320px;
@@ -360,7 +445,6 @@ p{
 	
 	bottom:490px;
 	margin:0 auto;
-	right:50px;
 	width:1100px;
 	height:750px;
 	background-image: url(../img/rice07.jpg);
@@ -422,12 +506,13 @@ ul {
 
 
 .projectBrief{
+	z-index: 30;
 	position: relative;
-	left: 50px;
-	width:140px;
-	height:164px;
-	margin-left:0px;
-	padding:13px 12px;
+	/*top:95px;*/
+	margin:0 auto;
+	width:100px;
+	height:150px;
+	right:370px;
 	/*border:2px solid red;*/
 }
 
@@ -446,7 +531,7 @@ ul {
 }
 
 .pbSfdmC{
-	top:50px;
+	bottom:0px;
 	/*border:1px solid red;*/
 }
 
@@ -483,8 +568,8 @@ ul {
 }
 
 #sfdmOverview{
-	top:-100px;
-	/*right:180px;*/
+	bottom:150px;
+	left:50px;
 	width:500px;
 }
 
@@ -504,6 +589,36 @@ ul {
 	position: relative;	
 	width:100%;
 	background-color: #efefef;
+}
+
+#sfdmPB1{
+	bottom:30px;
+	height:720px;
+}
+#sfdmPB2{
+	bottom:60px;
+	height:880px;
+}
+
+#sfdmText1{
+	width:350px;
+	top:100px;
+	right:310px;
+}
+#sfdmText2{
+	width:350px;
+	top:80px;
+	left:250px;
+}
+#sfdmText3{
+	width:350px;
+	top:550px;
+	right:350px;
+}
+#sfdmText4{
+	width:550px;
+	top:50px;
+	right:250px;
 }
 
 #ricePB1{
