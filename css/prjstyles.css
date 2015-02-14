@@ -595,6 +595,17 @@ p{
 	/*border:1px solid orange;*/
 }
 
+.vimeoBaton{
+	z-index: 10;
+	position: relative;
+	top:30px;
+	width:700px;
+	height:393px;
+	text-align: center;
+	margin:0 auto;
+	/*border:1px solid red;*/
+}
+
 .co2w01{
 	position: relative;	
 	top:120px;
@@ -1168,6 +1179,11 @@ ul {
 	top:100px;
 }
 
+#batnOverview{
+	width:500px;
+	bottom:55px;
+}
+
 #uviaOverview{
 	bottom:50px;
 }
@@ -1210,6 +1226,11 @@ ul {
 #aboutPB1{
 	top:80px;
 	height:1200px;
+}
+
+#batnPB1{
+	top:120px;
+	height:800px;
 }
 
 #co2wPB1{
