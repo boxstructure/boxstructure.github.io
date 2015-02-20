@@ -1284,6 +1284,15 @@ ul {
 	line-height:1.5em;
 }
 
+#batnTextcredit{
+	opacity:.5;
+	font-family: Open Sans;
+	font-weight: 300;
+	font-size:9pt;
+	z-index: 10;
+	text-align: right;
+}
+
 #batnText1{
 	z-index: 10;
 	bottom:350px;
