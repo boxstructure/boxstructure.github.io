@@ -11,6 +11,10 @@ $(document).ready(function(){
 	var menuWorkType = $('#type');
 	var menuWorkAlpha = $('#alphabetical');
 
+	var qcUpdate = $('.qcUpdateBrief');
+	var qcWelcome = $('.welcomeText');
+	var bestView = $('.bestViewed');
+
 	var topCover = $('.top');
 	var bottomCover = $('.bottom');
 	var clip = $ ('.clip');
@@ -33,8 +37,7 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	// var sfdmBannerText2 = $('projectBannerSfdm.btempSfdm2')
-	// var sfdmBannerText2 = $('#frame2').contents().find(".projectBannerSfdm.btempSfdm2");
+	var briefBatn = $('#bbbatn');
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -56,6 +59,15 @@ $(document).ready(function(){
 
 	
 	TweenLite.set(clip, {autoAlpha:0, x:850});
+
+	TweenLite.set(qcUpdate, {autoAlpha:0});
+	TweenLite.to(qcUpdate, .5, { autoAlpha:.7, ease:"easeInQuart"});
+
+	TweenLite.set(qcWelcome, {autoAlpha:0});
+	TweenLite.to(qcWelcome, .5, { autoAlpha:.6, ease:"easeInQuart"});
+
+	TweenLite.set(bestView, {autoAlpha:0});
+	TweenLite.to(bestView, .5, { autoAlpha:.6, ease:"easeInQuart"});
 
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
 	TweenLite.set(screen1, {autoAlpha:0});
@@ -177,7 +189,11 @@ function setHoverWorkChron() {
 			TweenLite.to(ttlBrief, .5, { delay:.5, delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 
 			TweenLite.to(menuWorkChron, .1, { delay:.15, scaleX:1, scaleY: 1, ease:"easeInQuart"});
-			
+
+			TweenLite.to(qcUpdate, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(qcWelcome, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(bestView, .5, { autoAlpha:0, ease:"easeInQuart"});
+
 			TweenLite.to(ttlChrono, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(ttlCateg, .01, { autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(ttlAlpha, .01, { autoAlpha:0, ease:"easeOutExpo"});
@@ -229,6 +245,10 @@ function setHoverWorkType() {
 
 			TweenLite.to(menuWorkType, .1, { delay:.15, scaleX:1, scaleY: 1, ease:"easeInQuart"});
 
+			TweenLite.to(qcUpdate, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(qcWelcome, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(bestView, .5, { autoAlpha:0, ease:"easeInQuart"});
+
 			TweenLite.to(ttlChrono, .01, { autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(ttlCateg, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(ttlAlpha, .01, { autoAlpha:0, ease:"easeOutExpo"});
@@ -279,7 +299,10 @@ function setHoverWorkAlpha() {
 			mouseup: function(){
 			TweenLite.to(menuWorkAlpha, .05, {scaleX:1, scaleY:1, ease:"easeOutExpo"});
 			TweenLite.to(ttlBrief, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
-			
+
+			TweenLite.to(qcUpdate, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(qcWelcome, .5, { autoAlpha:0, ease:"easeInQuart"});
+			TweenLite.to(bestView, .5, { autoAlpha:0, ease:"easeInQuart"});
 
 			TweenLite.to(ttlChrono, .01, { autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(ttlCateg, .01, { autoAlpha:0, ease:"easeOutExpo"});
@@ -680,6 +703,11 @@ function setHoverBATN() {
 			TweenLite.to(screen8, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabbatn, .2, { scaleX:1.05, scaleY:1.05});
 			},
+
+
+			var briefBatn = $('#frame8').contents().find(".projectBriefContainer");
+			TweenLite.to(briefRice, .35, { delay:0, x:0, y:-300, autoAlpha:0, ease:"easeOutExpo"});
+
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	

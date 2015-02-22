@@ -1119,10 +1119,12 @@ ul {
 	height:150px;
 	right:370px;
 	/*margin-left:0px;*/
-	/*border:2px solid red;*/
+	border:2px solid red;
 }
 
+
 #bbbatn{
+	background-color: #ffffff;
 	top:150px;
 }
 
