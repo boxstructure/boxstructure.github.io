@@ -37,7 +37,8 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	var briefBatn = $('.projectBriefBatn');
+
+	// var briefBatn = $('.projectBriefBatn');
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -69,7 +70,7 @@ $(document).ready(function(){
 	TweenLite.set(bestView, {autoAlpha:0});
 	TweenLite.to(bestView, .5, { autoAlpha:.6, ease:"easeInQuart"});
 
-	TweenLite.set(briefBatn, {y:-1000});
+	// TweenLite.set(briefBatn, {y:-1000});
 
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
 	TweenLite.set(screen1, {autoAlpha:0});
@@ -697,12 +698,14 @@ function setHoverRICE() {
 
 
 function setHoverBATN() {
-
-
 	tabbatn
 		.off('mouseover mouseleave mousedown click')
 		.on({
 			mouseover: function(){
+
+			var briefBatn = $('#frame8').contents().find("#projectBriefBatn");
+			TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screen8, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabbatn, .2, { scaleX:1.05, scaleY:1.05});
