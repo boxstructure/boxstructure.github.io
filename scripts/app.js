@@ -74,7 +74,7 @@ $(document).ready(function(){
 	// TweenLite.set(briefBatn, {y:-1000});
 
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
-	TweenLite.set(screenA, {autoAlpha:0, x:1700});
+	TweenLite.set(screenC, {autoAlpha:0, x:1700});
 	TweenLite.set(screen1, {autoAlpha:0});
 	TweenLite.set(screen2, {autoAlpha:0});
 	TweenLite.set(screen3, {autoAlpha:0});
@@ -190,7 +190,7 @@ function setHoverContact() {
 			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(screenA, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screenC, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
 
 			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback2).bind("mouseover mouseleave");
