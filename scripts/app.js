@@ -705,8 +705,8 @@ function setHoverBATN() {
 			},
 
 
-			var briefBatn = $('#frame8').contents().find(".projectBrief");
-			TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			// var briefBatn = $('#frame8').contents().find(".projectBrief");
+			// TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 
 			mouseleave: function(){
