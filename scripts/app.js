@@ -704,7 +704,7 @@ function setHoverBATN() {
 			mouseover: function(){
 
 			var briefBatn = $('#frame8').contents().find("#projectBriefBatn");
-			TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(briefBatn, .0, { x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
 
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screen8, .85, { autoAlpha:1, ease:"easeOutQuint"});
