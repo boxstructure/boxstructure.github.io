@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var menuAbout = $('#about');
 	var menuWork = $('#work');
 	var menuNotes = $('menuNotes');
-	var menuContact = $('menuContact');
+	var menuContact = $('#contact');
 	var menuWorkChron = $('#chronological');
 	var menuWorkType = $('#type');
 	var menuWorkAlpha = $('#alphabetical');
