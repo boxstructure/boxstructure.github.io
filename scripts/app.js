@@ -1151,6 +1151,8 @@ function setHoverNavback2() {
 				$(setHoverUVIA).bind("mouseover mouseleave");
 				$(setHoverMISC).bind("mouseover mouseleave");
 
+				document.getElementById('#frameC').contentDocument.location.reload(true);
+
 				setTimeout( function(){
 				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
