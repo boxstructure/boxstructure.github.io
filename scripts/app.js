@@ -19,6 +19,7 @@ $(document).ready(function(){
 	var bottomCover = $('.bottom');
 	var clip = $ ('.clip');
 	var screen0 = $ ('.screen');
+	var screenC = $('.contact');
 	var screenA = $('.zero');
 	var screen1 = $('.one');
 	var screen2 = $('.two');
@@ -73,6 +74,7 @@ $(document).ready(function(){
 	// TweenLite.set(briefBatn, {y:-1000});
 
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
+	TweenLite.set(screenA, {autoAlpha:0, x:1700});
 	TweenLite.set(screen1, {autoAlpha:0});
 	TweenLite.set(screen2, {autoAlpha:0});
 	TweenLite.set(screen3, {autoAlpha:0});
@@ -157,6 +159,50 @@ function setHoverAbout() {
    	setHoverAbout();
 	});
 	setHoverAbout();
+
+
+function setHoverContact() {
+	menuContact
+		.off('mouseover mouseleave mousedown mouseup')
+		.on({
+			mouseover: function(){
+			
+			TweenLite.to(menuContact, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(menuContact, .2, { scaleX:1, scaleY:1});
+			},
+
+
+			mousedown: function(){
+			TweenLite.to(menuContact, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+			},
+
+			mouseup: function(){
+
+			setTimeout( function(){
+			$(mainTemplate).css('z-index', 0);}, 200);
+
+			TweenLite.to(menuContact, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(navback2, .5, {autoAlpha:.6});
+			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
+			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screenA, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
+
+			$(this).unbind("mouseover mouseleave");
+			$(setHoverNavback2).bind("mouseover mouseleave");
+    	}
+        });
+	}
+
+	$(menuContact).click(function(){
+   	setHoverAbout();
+	});
+	setHoverAbout();
+
 
 
 ////////////////////////////////////////////////////////Tab Category///////////
