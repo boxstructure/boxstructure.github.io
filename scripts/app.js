@@ -187,8 +187,8 @@ function setHoverContact() {
 			TweenLite.to(menuContact, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
 			TweenLite.to(navback2, .5, {autoAlpha:.6});
 			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
-			// TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
-			// TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
+			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			
 			TweenLite.to(qcUpdate, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
