@@ -5,7 +5,7 @@ $(document).ready(function(){
 	
 	var menuAbout = $('#about');
 	var menuWork = $('#work');
-	var menuNotes = $('menuNotes');
+	var menuNotes = $('#notes');
 	var menuContact = $('#contact');
 	var menuWorkChron = $('#chronological');
 	var menuWorkType = $('#type');
@@ -199,9 +199,9 @@ function setHoverContact() {
 	}
 
 	$(menuContact).click(function(){
-   	setHoverAbout();
+   	setHoverContact();
 	});
-	setHoverAbout();
+	setHoverContact();
 
 
 
