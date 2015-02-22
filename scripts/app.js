@@ -181,8 +181,6 @@ function setHoverContact() {
 
 			mouseup: function(){
 
-			$('#frameC')[0].contentWindow.location.reload(true);
-
 			setTimeout( function(){
 			$(mainTemplate).css('z-index', 0);}, 200);
 
@@ -199,7 +197,6 @@ function setHoverContact() {
 
 
 			TweenLite.to(screenC, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
-
 
 
 			$(this).unbind("mouseover mouseleave");
@@ -1130,6 +1127,9 @@ function setHoverNavback2() {
 				},
 
 			mouseup: function(){
+
+					$('#frameC')[0].contentWindow.location.reload(true);
+			
 			setTimeout( function(){
 				
 				$(mainTemplate).css('z-index', 50);}, 200);
@@ -1153,6 +1153,9 @@ function setHoverNavback2() {
 				$(setHoverKYRT).bind("mouseover mouseleave");
 				$(setHoverUVIA).bind("mouseover mouseleave");
 				$(setHoverMISC).bind("mouseover mouseleave");
+
+			
+
 
 				setTimeout( function(){
 				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
