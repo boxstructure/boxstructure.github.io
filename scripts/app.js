@@ -695,6 +695,11 @@ function setHoverRICE() {
 
 
 function setHoverBATN() {
+
+		var briefBatn = $('#frame8').contents().find(".projectBriefBatn");
+			TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
+
+	
 	tabbatn
 		.off('mouseover mouseleave mousedown click')
 		.on({
@@ -703,11 +708,6 @@ function setHoverBATN() {
 			TweenLite.to(screen8, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabbatn, .2, { scaleX:1.05, scaleY:1.05});
 			},
-
-
-			var briefBatn = $('#frame8').contents().find(".projectBriefBatn");
-			TweenLite.to(briefBatn, .6, { delay:.18, x:305, y:-100, autoAlpha:1, ease:"easeOutExpo"});
-
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
