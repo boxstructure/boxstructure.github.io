@@ -190,7 +190,9 @@ function setHoverContact() {
 			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(qcUpdate, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+			
+			TweenLite.to(qcUpdate, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+			
 			TweenLite.to(screenC, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
 
 
