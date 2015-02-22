@@ -37,7 +37,7 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	var briefBatn = $('#bbbatn');
+	var briefBatn = $('.projectBriefBatn');
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -69,7 +69,7 @@ $(document).ready(function(){
 	TweenLite.set(bestView, {autoAlpha:0});
 	TweenLite.to(bestView, .5, { autoAlpha:.6, ease:"easeInQuart"});
 
-	TweenLite.set(briefBatn, {y:-500});
+	TweenLite.set(briefBatn, {y:-1000});
 
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
 	TweenLite.set(screen1, {autoAlpha:0});
