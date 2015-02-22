@@ -726,6 +726,9 @@ function setHoverBATN() {
 			click: function(){
 			setTimeout( function(){
 
+			var briefBatn = $('#frame8').contents().find(".projectBriefBatn");
+			TweenLite.to(briefBatn, .5, {y:0, autoAlpha:1, ease:"easeOutExpo"});
+
 			$(mainTemplate).css('z-index', 0);}, 200);
 
 			TweenLite.to(tabbatn, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
