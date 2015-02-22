@@ -37,7 +37,7 @@ $(document).ready(function(){
 	var ttlChrono = $('#ttlChrono');
 	var ttlCateg = $('.ttlCateg');
 	var ttlAlpha = $('#ttlAlpha');
-	var briefBatn = $('#bbbatn');
+	// var briefBatn = $('#bbbatn');
 
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
@@ -705,8 +705,8 @@ function setHoverBATN() {
 			},
 
 
-			var briefBatn = $('#frame8').contents().find(".projectBriefContainer");
-			TweenLite.to(briefRice, .35, { delay:0, x:0, y:-300, autoAlpha:0, ease:"easeOutExpo"});
+			var briefBatn = $('#frame8').contents().find("#bbbatn");
+			TweenLite.to(briefBatn, .35, { delay:0, x:0, y:-300, autoAlpha:0, ease:"easeOutExpo"});
 
 
 			mouseleave: function(){
