@@ -192,6 +192,9 @@ function setHoverContact() {
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screenC, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
 
+			TweenLite.to(qcUpdate, .15, {autoAlpha:0, ease:"easeOutExpo"});
+			},
+
 			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback2).bind("mouseover mouseleave");
     	}
