@@ -1126,20 +1126,20 @@ ul {
 .projectBriefBatn{
 	z-index: 30;
 	position: relative;
-	top:95px;
 	margin:0 auto;
 	width:100px;
 	height:150px;
 	right:370px;
 	/*margin-left:0px;*/
 	border:2px solid red;
+	background-color: #ffffff;
+	top:150px;
 }
 
 
 
 #bbbatn{
-	background-color: #ffffff;
-	top:150px;
+	
 }
 
 #bbmisc{
