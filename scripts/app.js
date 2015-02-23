@@ -246,59 +246,60 @@ $(function() {
     });
 });
 
-// ////////////////////////////////////////////////////////Tab Category Chronological///////////
+// ////////////////////////////////////////////////////////Tab Category Alphabetical///////////
 
-function setHoverWorkChron() {
-	menuWorkChron
+function setHoverWorkAlpha() {
+	menuWorkAlpha
 		.off('mouseover mouseleave mousedown mouseup')
 		.on({
 			mouseover: function(){
-			TweenLite.to(menuWorkChron, .1, { scaleX:1.02, scaleY:1.02});
+			TweenLite.to(menuWorkAlpha, .1, { scaleX:1.02, scaleY:1.02});
 			},
 
 			mouseleave: function(){
-			TweenLite.to(menuWorkChron, .1, { scaleX:1, scaleY:1});
+			TweenLite.to(menuWorkAlpha, .1, { scaleX:1, scaleY:1});
 			},
 
 			mousedown: function(){
-			TweenLite.to(menuWorkChron, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
+			TweenLite.to(menuWorkAlpha, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
 			},
 
 			mouseup: function(){
-			TweenLite.to(ttlBrief, .5, { delay:.5, delay:.5, autoAlpha:1, ease:"easeOutExpo"});
-
-			TweenLite.to(menuWorkChron, .1, { delay:.15, scaleX:1, scaleY: 1, ease:"easeInQuart"});
+			TweenLite.to(menuWorkAlpha, .05, {scaleX:1, scaleY:1, ease:"easeOutExpo"});
+			TweenLite.to(ttlBrief, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 
 			TweenLite.to(qcUpdate, .5, { autoAlpha:0, ease:"easeInQuart"});
 			TweenLite.to(qcWelcome, .5, { autoAlpha:0, ease:"easeInQuart"});
 			TweenLite.to(bestView, .5, { autoAlpha:0, ease:"easeInQuart"});
 
-			TweenLite.to(ttlChrono, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(ttlChrono, .01, { autoAlpha:0, ease:"easeOutExpo"});
 			TweenLite.to(ttlCateg, .01, { autoAlpha:0, ease:"easeOutExpo"});
-			TweenLite.to(ttlAlpha, .01, { autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(ttlAlpha, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 
 
-			TweenLite.to(tabsfdm, .5, { x:-285, y:-400, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabrice, .5, { x:-285, y:-370, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabmisc, .5, { x:-285, y:-340, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabslrv, .5, { x:-95, y:-490, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabgs20, .5, { x:-95, y:-460, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabhtwr, .5, { x:-95, y:-430, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabco2w, .5, { x:95, y:-580, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabsjvc, .5, { x:95, y:-550, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabkyrt, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabuvia, .5, { x:285, y:-670, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabbatn, .5, { x:285, y:-640, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabflar, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabbatn, .5, { x:-285, y:-640, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabco2w, .5, { x:-285, y:-460, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabflar, .5, { x:-285, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabgs20, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhtwr, .5, { x:-95, y:-490, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabkyrt, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabmisc, .5, { x:95, y:-460, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabrice, .5, { x:-95, y:-310, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsfdm, .5, { x:95, y:-400, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabslrv, .5, { x:95, y:-400, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsjvc, .5, { x:95, y:-430, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabuvia, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
 
     	}
         });
 	}
 
-	$(menuWorkChron).click(function(){
-   	setHoverWorkChron();
+	$(menuWorkAlpha).click(function(){
+   	setHoverWorkAlpha();
 	});
-	setHoverWorkChron();
+	setHoverWorkAlpha();
+
+
 
 
 // ////////////////////////////////////////////////////////Tab Category Type///////////
@@ -333,20 +334,20 @@ function setHoverWorkType() {
 			TweenLite.to(ttlAlpha, .01, { autoAlpha:0, ease:"easeOutExpo"});
 
 			TweenLite.to(tabsfdm, .5, { x:-285, y:-400, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabrice, .5, { x:-285, y:-370, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabmisc, .5, { x:-285, y:-340, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabco2w, .5, { x:-95, y:-580, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabhtwr, .5, { x:-95, y:-490, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabrice, .5, { x:-285, y:-380, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabmisc, .5, { x:-285, y:-340, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabco2w, .5, { x:-285, y:-360, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhtwr, .5, { x:-95, y:-330, autoAlpha:1, ease:"easeInQuart"});
 			
-			TweenLite.to(tabbatn, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabslrv, .5, { x:-95, y:-250, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabbatn, .5, { x:-95, y:-640, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabslrv, .5, { x:-95, y:-410, autoAlpha:1, ease:"easeInQuart"});
 		
-			TweenLite.to(tabgs20, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabgs20, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabkyrt, .5, { x:95, y:-580, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabuvia, .5, { x:95, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabuvia, .5, { x:95, y:-560, autoAlpha:1, ease:"easeInQuart"});
 		
-			TweenLite.to(tabsjvc, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabflar, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsjvc, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabflar, .5, { x:285, y:-560, autoAlpha:1, ease:"easeInQuart"});
 
     	}
         });
@@ -357,58 +358,59 @@ function setHoverWorkType() {
 	});
 	setHoverWorkType();
 
-// ////////////////////////////////////////////////////////Tab Category Alphabetical///////////
+// ////////////////////////////////////////////////////////Tab Category Chronological///////////
 
-function setHoverWorkAlpha() {
-	menuWorkAlpha
+function setHoverWorkChron() {
+	menuWorkChron
 		.off('mouseover mouseleave mousedown mouseup')
 		.on({
 			mouseover: function(){
-			TweenLite.to(menuWorkAlpha, .1, { scaleX:1.02, scaleY:1.02});
+			TweenLite.to(menuWorkChron, .1, { scaleX:1.02, scaleY:1.02});
 			},
 
 			mouseleave: function(){
-			TweenLite.to(menuWorkAlpha, .1, { scaleX:1, scaleY:1});
+			TweenLite.to(menuWorkChron, .1, { scaleX:1, scaleY:1});
 			},
 
 			mousedown: function(){
-			TweenLite.to(menuWorkAlpha, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
+			TweenLite.to(menuWorkChron, .05, {scaleX:.98, scaleY:.98, ease:"easeOutExpo"});
 			},
 
 			mouseup: function(){
-			TweenLite.to(menuWorkAlpha, .05, {scaleX:1, scaleY:1, ease:"easeOutExpo"});
-			TweenLite.to(ttlBrief, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(ttlBrief, .5, { delay:.5, delay:.5, autoAlpha:1, ease:"easeOutExpo"});
+
+			TweenLite.to(menuWorkChron, .1, { delay:.15, scaleX:1, scaleY: 1, ease:"easeInQuart"});
 
 			TweenLite.to(qcUpdate, .5, { autoAlpha:0, ease:"easeInQuart"});
 			TweenLite.to(qcWelcome, .5, { autoAlpha:0, ease:"easeInQuart"});
 			TweenLite.to(bestView, .5, { autoAlpha:0, ease:"easeInQuart"});
 
-			TweenLite.to(ttlChrono, .01, { autoAlpha:0, ease:"easeOutExpo"});
+			TweenLite.to(ttlChrono, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(ttlCateg, .01, { autoAlpha:0, ease:"easeOutExpo"});
-			TweenLite.to(ttlAlpha, .5, { delay:.5, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(ttlAlpha, .01, { autoAlpha:0, ease:"easeOutExpo"});
 
 
-			TweenLite.to(tabbatn, .5, { x:-285, y:-700, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabco2w, .5, { x:-285, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabflar, .5, { x:-285, y:-610, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabgs20, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsfdm, .5, { x:-285, y:-400, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabrice, .5, { x:-285, y:-370, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabmisc, .5, { x:-285, y:-340, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabslrv, .5, { x:-285, y:-340, autoAlpha:1, ease:"easeInQuart"});
+			// TweenLite.to(tabgs20, .5, { x:-95, y:-460, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabhtwr, .5, { x:-95, y:-490, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabkyrt, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabmisc, .5, { x:95, y:-460, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabrice, .5, { x:95, y:-370, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabsfdm, .5, { x:95, y:-280, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabslrv, .5, { x:285, y:-490, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabsjvc, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabuvia, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabco2w, .5, { x:-95, y:-460, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsjvc, .5, { x:-95, y:-430, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabkyrt, .5, { x:95, y:-580, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabuvia, .5, { x:95, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabbatn, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabflar, .5, { x:285, y:-670, autoAlpha:1, ease:"easeInQuart"});
 
     	}
         });
 	}
 
-	$(menuWorkAlpha).click(function(){
-   	setHoverWorkAlpha();
+	$(menuWorkChron).click(function(){
+   	setHoverWorkChron();
 	});
-	setHoverWorkAlpha();
+	setHoverWorkChron();
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

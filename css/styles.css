@@ -82,11 +82,8 @@ html, body{
 	width:1000px;
 	height: 100%;
 	margin:0 auto;
-	/*background-image: url(../img/qc-main-template-01.png);*/
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-
-	/*opacity:.5;*/
 	/*border:5px solid blue;*/
 }
 
@@ -110,7 +107,7 @@ html, body{
 	box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.4);
 	background-repeat:cover;
 	overflow:hidden;
-	background-image: url(../img/cover-00-top.jpg);
+	background-image: url(../img/cover-00-top.png);
 }
 
 #topfox{
@@ -128,7 +125,6 @@ html, body{
 	box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.4);
 	background-position: 0 340px; 
 	background-size:100% auto;
-	/*background-image: url(../img/cover-02-bottombg.png);*/
 	/*border:1px solid red;*/
 }
 
@@ -159,7 +155,7 @@ html, body{
 	/*background-position: 0 340px; */
 	background-size:100% auto;
 	background-repeat: repeat-y;
-	background-image: url(../img/cover-02-bottombg.jpg);
+	background-image: url(../img/cover-02-bottombg.png);
 	/*border:1px solid blue;*/
 }
 
@@ -277,7 +273,7 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	position: absolute;
 	font-family: Montserrat;
 	font-weight: 400;
-	font-size:.9em;
+	font-size:1em;
 	top:270px;
 	left:0;
 	right:0;
@@ -297,16 +293,44 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	font-size:.7em;
 	top:340px;
 	width:100%;
-	/*left:600px;*/
-	/*right:0;*/
-	/*margin-left: 50%;*/
-	/*margin-right: 50%;*/
 	text-align: center;
-	/*width:340px;*/
 	height:50px;
 	/*border:1px solid red;*/
 	opacity: .5;
 }
+
+.qcUpdateBrief{
+	z-index: 30;
+	position: absolute;
+	top:495px;
+	left:0;
+	right:740px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width:100px;
+	height:150px;
+
+	/*right:370px;*/
+	/*margin-left:0px;*/
+	/*border:2px solid red;*/
+}
+
+.qcUpdateSummary{
+	font-family: Open Sans;
+	font-size:.8em;
+	line-height: 10pt;
+}
+
+.updateTitle{
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.updateDesc{
+	font-weight: 400;
+}
+
 
 /* =============================================================================
    Navback
@@ -349,9 +373,6 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 
 .subtitle{
 	position:absolute;
-	/*list-style: none;*/
-    /*padding:0px;*/
-	/*text-align:right;*/
 	font-family: Amatic SC;
 	font-weight: 400;
 	font-size:20pt;
@@ -372,13 +393,21 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	top:30px;
 }
 #ttlEnv{
+	left:215px;
+	top:193px;
+}
+/*#ttlEnv{
+	left:405px;
+	top:30px;
+}*/
+#ttlPrd{
 	left:405px;
 	top:30px;
 }
-#ttlPrd{
+/*#ttlPrd{
 	left:405px;
 	top:203px;
-}
+}*/
 
 #ttlSrv{
 	left:595px;
@@ -492,16 +521,11 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	width:160px;
 	height:30px;
 	background:#fff;
-/*	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;*/
 	cursor:pointer;
 	/*margin:40px auto;*/
 }
 
 .tabImg {
-	/*z-index: 500;*/
-	/*position:relative;*/
 	width:160px;
 	height:30px;
 	background-repeat: no-repeat;
@@ -558,10 +582,10 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-.tMisc{
+/*.tMisc{
 	top: 500px;
 	left: 500px;
-} 
+} */
 
 
 .tSlrv{
@@ -569,11 +593,11 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
-
+/*
 .tGs20{
 	top: 500px;
 	left: 500px;
-} 
+} */
 
 
 .tHtwr{
@@ -616,14 +640,8 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 .clip{
 	z-index: 0;
 	position: relative;
-	/*top:50%;
-	left:50%;*/
-/*	margin-left: 1.5%;
-	margin-top: 3.5%;*/
 	width:100%;
 	height: 100%;	
-	/*overflow: hidden;*/
-	/*background-color: #333;*/
 	background-clip: padding-box;
 	/*border:2px solid blue;*/
 }
@@ -649,53 +667,12 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 .projectBannerTemp{
 	z-index: 1000;
 	position:absolute;
- 	/*bottom:140px;*/
- 	/*right:200px;*/
- 	/*top:65%;*/
  	top:230px;
-
- 	/*bottom:10%;*/
  	left:50%;
 	width:335px;
-	/*height:100px;*/
 	text-shadow:1px 1px 1px rgba(0,0,0,.2);
 	/*border:2px solid green;*/
 }
-
-.qcUpdateBrief{
-	z-index: 30;
-	position: absolute;
-	top:495px;
-	left:0;
-	right:740px;
-	margin-left: auto;
-	margin-right: auto;
-
-	width:110px;
-	height:150px;
-
-	/*right:370px;*/
-	/*margin-left:0px;*/
-	/*border:2px solid red;*/
-}
-
-.qcUpdateSummary{
-	font-family: Open Sans;
-	font-size:9pt;
-	line-height: 10pt;
-}
-
-.updateTitle{
-	font-weight: 700;
-}
-
-.updateDesc{
-	font-weight: 400;
-}
-
-
-
-
 
 .blackout{
 	z-index: -1;
@@ -713,14 +690,12 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 
 #btSfdm{
 
-	/*margin-right:0px;*/
 	text-align: left;
 	color:#fff;
 	font-family: Raleway;
 	font-weight:300;
 	font-size: 26px;
 	line-height: 1.5em;
-	/*line-height: 1.5em;*/
 	/*border:2px solid red;*/
 }
 
@@ -728,32 +703,10 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	position: relative;
 	left: 0;
 	top: 10px;
-	/*margin-left:50%;*/
 	width:310px;
 	font-size: 11pt;
 	line-height: 16pt;
-	/*height:405px;*/
 	margin-left:0px;
 	/*border:2px solid green;*/
 }
 
-
-
-/*@media all and (max-width:500px) {
-    .wrap{
-    	
-    	transform:scale(.667,.667);
-    	-ms-transform:scale(.667,.667);
-    	-webkit-transform:scale(.667,.667);
-    }
-}*/
-
-/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    
-    .wrap{
-    	
-    	transform:scale(.75,.75);
-    	-ms-transform:scale(.75,.75);
-    	-webkit-transform:scale(.75,.75);
-    }
-}*/
