@@ -1138,7 +1138,8 @@ function setHoverNavback2() {
 
 				TweenLite.set(screenA, {delay:.2, autoAlpha:0, x:-1700});
 
-				$('#frameC')[0].contentWindow.location.reload(true);
+				// $('#frameC')[0].contentWindow.location.reload(true);
+				// document.getElementById('FrameID').contentWindow.location.reload(true);
 
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
@@ -1158,6 +1159,8 @@ function setHoverNavback2() {
 
 				setTimeout( function(){
 				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
+				200)
+				$('#frameC').attr('src', $('#frameC').attr('src')); contentWindow.location.reload(true);},
 				200)
 			}
         });
