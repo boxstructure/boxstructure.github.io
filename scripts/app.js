@@ -1154,12 +1154,14 @@ function setHoverNavback2() {
 				$(setHoverUVIA).bind("mouseover mouseleave");
 				$(setHoverMISC).bind("mouseover mouseleave");
 
-			
+			// setTimeout( function(){
+			// 	$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
+			// 	200)
 
 
 				setTimeout( function(){
-				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
-				200)
+				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);
+				
 				$('#frameC').attr('src', $('#frameC').attr('src')); contentWindow.location.reload(true);},
 				200)
 			}
