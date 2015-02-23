@@ -71,8 +71,6 @@ $(document).ready(function(){
 	TweenLite.set(bestView, {autoAlpha:0});
 	TweenLite.to(bestView, .5, { autoAlpha:.6, ease:"easeInQuart"});
 
-	// TweenLite.set(briefBatn, {y:-1000});
-
 	TweenLite.set(screenA, {autoAlpha:0, x:-1700});
 	TweenLite.set(screenC, {autoAlpha:0, x:1700});
 	TweenLite.set(screen1, {autoAlpha:0});
@@ -185,7 +183,7 @@ function setHoverContact() {
 			$(mainTemplate).css('z-index', 0);}, 200);
 
 			TweenLite.to(menuContact, .35, { delay:.25, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
-			TweenLite.to(navback2, .5, {autoAlpha:.6});
+			TweenLite.to(navback, .5, {autoAlpha:.6});
 			TweenLite.to(topCover, .5, { x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
 			TweenLite.to(bottomCover, .9, { delay:0, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.2, autoAlpha:0});
@@ -200,7 +198,7 @@ function setHoverContact() {
 
 
 			$(this).unbind("mouseover mouseleave");
-			$(setHoverNavback2).bind("mouseover mouseleave");
+			$(setHoverNavback).bind("mouseover mouseleave");
     	}
         });
 	}
@@ -209,6 +207,31 @@ function setHoverContact() {
    	setHoverContact();
 	});
 	setHoverContact();
+
+
+////////////////////////////////////////////////////////Work///////////////////
+
+function setHoverWork() {
+	menuWork
+		.off('mouseover mouseleave')
+		.on({
+			mouseover: function(){
+			
+			TweenLite.to(menuWork, .2, { scaleX:1.05, scaleY:1.05});
+			},
+
+			mouseleave: function(){
+			TweenLite.to(menuWork, .2, { scaleX:1, scaleY:1});
+			},
+
+        });
+	}
+
+	$(menuWork).click(function(){
+   	setHoverWork();
+	});
+	setHoverWork();
+
 
 
 
@@ -1106,6 +1129,7 @@ function setHoverNavback() {
 			});
 
 
+
 function setHoverNavback2() {
 	navback2
 		.off('mouseover mouseleave mousedown mouseup')
@@ -1132,7 +1156,7 @@ function setHoverNavback2() {
 				$(mainTemplate).css('z-index', 50);}, 200);
 				TweenLite.to(navback2, .1, {autoAlpha:0});
 				TweenLite.to(screen0, .5, {autoAlpha:0});
-				TweenLite.to(clip, .5, { x:650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+				TweenLite.to(clip, .5, { x:-650, y:0, autoAlpha:0, ease:"easeOutQuint"});	
 				TweenLite.to(topCover, .35, {x:0, y:0, delay:.05, ease:"easeOutExpo"});
 				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
 
