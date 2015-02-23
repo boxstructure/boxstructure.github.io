@@ -55,23 +55,23 @@
   position:relative;
   width:200px;
   height:50px;
-  top:170px;
+  top:160px;
   /*border:1px solid blue;*/
 }
 
 .textCardInfoName{
 	font-family:Montserrat;
-	font-size: 14px;
+	font-size: 15px;
     font-weight: 700;
     color:#ffffff;
-/*
+
     background-color: #ffffff;
     -webkit-background-clip: text;
-    -webkit-box-shadow: inner 0 2px 2px rgba(0,0,0,0.85);*/
+    -webkit-box-shadow: inner 0 2px 2px rgba(0,0,0,0.85);
 /*	background-clip: text;
         color: transparent;
         text-shadow: rgba(255,255,255,0.5) .25px .5px 1px;*/
-    opacity: .85;
+    opacity: .74;
 	text-align:center;
   /*border:1px solid red;*/
 }
@@ -79,20 +79,27 @@
 .textCardInfo{
 	font-family:Lato;
 	text-decoration:none;
-	font-size: 10px;
-    font-weight: 400;
-    line-height:12px;
+	font-size: 11.5px;
+  font-weight: 400;
+  line-height:12px;
   color:#ffffff;
-    /*width: 200px;*/
-  /*  background-color: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-box-shadow: inner 0 2px 2px rgba(0,0,0,0.85);*/
-/*	background-clip: text;
-        color: transparent;
-        text-shadow: rgba(255,255,255,0.5) .25px .5px 1px;*/
-    opacity: .85;
+  opacity: .7;
 	text-align:center;
   /*border:1px solid red;	*/
+}
+
+.textCardResume{
+  margin-top: 50px;
+  font-family:Droid Serif;
+  text-decoration:none;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height:0px;
+  color:#000000;
+  opacity: .7;
+  text-align:center;
+  /*border:1px solid red; */
 }
 
 .logo-container-c {
@@ -126,19 +133,18 @@
 	color:#ffffff;
 	list-style:none;
 	text-align:right;
-  	*text-shadow:1px 1px 1px rgba(0, 0, 0, .5);
-  	width:100%;
-  	line-height: 6px;
-  	font-size:8px;
-  	max-width: 35px;
-  	background-color: #666666;
-    -webkit-background-clip: text;
-    -webkit-box-shadow: inner 0 2px 2px rgba(0,0,0,0.85);
+ 	text-shadow:1px 1px 1px rgba(0, 0, 0, .5);
+ 	width:100%;
+ 	font-size:9px;
+  max-width: 35px;
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -webkit-box-shadow: inner 0 2px 2px rgba(0,0,0,0.85);
 	background-clip: text;
-        color: transparent;
-        text-shadow: rgba(255,255,255,0.5) .25px .5px 1px;
-    opacity: .4;
-    margin:0px auto;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) .25px .5px 1px;
+  opacity: .4;
+  margin:0px auto;
 }
 
 

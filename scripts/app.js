@@ -1138,9 +1138,6 @@ function setHoverNavback2() {
 
 				TweenLite.set(screenA, {delay:.2, autoAlpha:0, x:-1700});
 
-				$('#frameC').contentWindow.location.reload();
-				// document.getElementById('FrameID').contentWindow.location.reload(true);
-
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
 				$(setHoverSLRV).bind("mouseover mouseleave");
