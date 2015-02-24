@@ -124,7 +124,7 @@ p{
 	/*background-image: url(../img/qc-main-template-01.png);*/
 	overflow: hidden;
 	/*opacity:.5;*/
-	/*border:3px solid red;*/
+	border:3px solid red;
 }
 
 .cbatn{
@@ -599,6 +599,115 @@ p{
 	/*border:1px solid orange;*/
 }
 
+.flar01{
+	position: relative;	
+	top:160px;
+	margin:0 auto;
+	/*left:100px;*/
+	width:900px;	
+	height:300px;
+	background-size: contain;
+	background-image: url(../img/flar01.png);
+	/*border:1px solid red;*/
+}
+
+.flar02{
+	position: relative;	
+	top:150px;
+	margin:0 auto;
+	/*left:100px;*/
+	width:900px;	
+	height:350px;
+	background-size: contain;
+	background-image: url(../img/flar02.png);
+	/*border:1px solid red;*/
+}
+
+.flar02{
+	position: relative;	
+	top:150px;
+	margin:0 auto;
+	/*left:100px;*/
+	width:900px;	
+	height:350px;
+	background-size: contain;
+	background-image: url(../img/flar02.png);
+	/*border:1px solid red;*/
+}
+
+.flar03{
+	position: relative;	
+	top:150px;
+	margin:0 auto;
+	/*left:100px;*/
+	width:400px;	
+	height:350px;
+	right:230px;
+	background-size: contain;
+	background-image: url(../img/flar03.jpg);
+	/*border:1px solid red;*/
+}
+
+.flar04{
+	position: relative;	
+	top:120px;
+	margin:0 auto;
+	right:220px;
+	width:380px;	
+	height:370px;
+	background-size: contain;
+	background-image: url(../img/flar04.jpg);
+	/*border:1px solid red;*/
+}
+
+.flar05{
+	position: relative;	
+	top:340px;
+	margin:0 auto;
+	right:320px;
+	width:130px;	
+	height:130px;
+	background-size: contain;
+	background-image: url(../img/flar05.jpg);
+	/*border:1px solid red;*/
+}
+
+.flar06{
+	position: relative;	
+	bottom:200px;
+	margin:0 auto;
+	left:230px;
+	width:720px;	
+	height:400px;
+	background-size: contain;
+	background-image: url(../img/flar06.png);
+	/*border:1px solid red;*/
+}
+
+.flar07{
+	position: relative;	
+	bottom:190px;
+	margin:0 auto;
+	left:450px;
+	width:250px;	
+	height:250px;
+	background-size: contain;
+	background-image: url(../img/flar07.png);
+	/*border:1px solid red;*/
+}
+
+.flar08{
+	position: relative;	
+	bottom:445px;
+	margin:0 auto;
+	left:180px;
+	width:250px;	
+	height:250px;
+	background-size: contain;
+	background-image: url(../img/flar08.png);
+	/*border:1px solid red;*/
+}
+
 .batn01{
 	position: relative;	
 	bottom:150px;
@@ -754,6 +863,18 @@ p{
 	height:484px;
 	text-align: center;
 	margin:0 auto;
+	/*border:1px solid red;*/
+}
+
+.vimeoFlar{
+	z-index: 10;
+	position: relative;
+	bottom:550px;
+	width:362px;
+	height:670px;
+	text-align: center;
+	margin:0 auto;
+	left:200px;
 	/*border:1px solid red;*/
 }
 
@@ -1129,7 +1250,7 @@ ul {
 	margin:0 auto;
 	width:140px;
 	height:200px;
-	right:370px;
+	right:37px;
 	padding:15px;
 	/*margin-left:0px;*/
 	/*border:2px solid red;*/
@@ -1197,9 +1318,19 @@ ul {
 	position: relative;
 	width:500px;
 	top:60px;
-	/*height:405px;*/
 	margin:0 auto;
 	/*border:2px solid green;*/
+}
+
+#flarOverview{
+	position: relative;
+	font-weight: 400;
+	width:500px;
+	bottom:55px;
+	margin:0 auto;
+
+	/*background-color:rgba(255,255,255,0.5);*/
+	/*box-shadow: 0 0 15px 15px rgba(255,255,255,0.5);*/
 }
 
 #co2wOverview{
@@ -1299,6 +1430,50 @@ ul {
 	font-size:13pt;
 	/*letter-spacing:.15em;*/
 	line-height:1.5em;
+}
+
+#flarText1{
+	width:555px;
+	z-index: 10;
+	top:80px;
+	right:175px;
+}
+
+#flarText2{
+	width:470px;
+	z-index: 10;
+	top:120px;
+	right:220px;
+}
+
+#flarText3{
+	width:470px;
+	z-index: 10;
+	top:100px;
+	right:220px;
+}
+
+#flarText4{
+	width:320px;
+	z-index: 10;
+	top:310px;
+	right:295px;
+}
+
+#flarList{
+	margin-left:20px;
+	list-style-type:circle;
+	font-family: Open Sans;
+	font-weight: 300;
+	font-size:13pt;
+	/*letter-spacing:.15em;*/
+	line-height:1.5em;
+}
+
+#flarConcept{
+	font-family: roboto slab;
+	font-weight: 700;
+	font-size:2em;
 }
 
 #batnTextcredit{
@@ -1444,6 +1619,16 @@ ul {
 #aboutPB1{
 	top:80px;
 	height:1200px;
+}
+
+#flarPB1{
+	top:30px;
+	height:700px;
+}
+
+#flarPB2{
+	top:220px;
+	height:1100px;
 }
 
 #batnPB1{
