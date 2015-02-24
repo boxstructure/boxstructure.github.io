@@ -115,6 +115,14 @@ p{
 	overflow: auto;
 }*/
 
+.wip{
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size:9pt;
+	color:#ff0000;
+	line-height: 10pt;
+}
+
 .projectContainer{
 	z-index: 100;
 	position: relative;	
