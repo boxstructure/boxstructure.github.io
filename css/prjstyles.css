@@ -318,13 +318,13 @@ p{
 #projectLogoTextkyrt2{
 		z-index: 50;
 		position:relative;
-		top:40px;
+		top:35px;
 		margin:0 auto;
 		left:10px;
 		font-family:'Lobster';
 		font-size: 32pt;
 		font-weight: 700;
-		color:#000;
+		color:#828282;
 		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
 		background-size:100%;
 		background-repeat:no-repeat;
@@ -521,8 +521,8 @@ p{
 	z-index: 50;
 	position:relative;
 	width:420px;
-	text-shadow:1px 1px 1px rgba(0,0,0,.5);
-	top:45px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.7);
+	top:38px;
 	right:268px;
 	margin:0 auto;
 	color:#fff;
