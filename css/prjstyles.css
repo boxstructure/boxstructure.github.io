@@ -142,6 +142,19 @@ p{
 	height: 7630px;
 }
 
+#kyrtContainer{
+	z-index: 100;
+	position: relative;	
+	width:100%;
+	bottom:30px;
+	height:415px;
+	min-width: 980px;
+	margin:0 auto;
+	overflow: hidden;
+	/*border:3px solid red;*/
+}
+
+
 #kyrtSky{
 	position: absolute;
 	width:100%;
@@ -163,9 +176,12 @@ p{
 }
 
 .ckyrt{
-	height:415px;
+	height:6800px;
 	width:100%;
+	/*border:1px solid red;*/
+
 }
+
 
 
 .chtwr{
@@ -213,6 +229,11 @@ p{
 }
 
 
+	.kyrt{
+		width:100%;
+		background-position: 0px -200px;
+		background-image: url(../img/kyrt00a.jpg)
+	}
 
 
 	.batn{
@@ -294,6 +315,21 @@ p{
 		background-repeat:no-repeat;
 }
 
+#projectLogoTextkyrt2{
+		z-index: 50;
+		position:relative;
+		top:40px;
+		margin:0 auto;
+		left:10px;
+		font-family:'Lobster';
+		font-size: 32pt;
+		font-weight: 700;
+		color:#000;
+		/*text-shadow:1px 1px 1px rgba(0,0,0,.8);*/
+		background-size:100%;
+		background-repeat:no-repeat;
+}
+
 #projectLogoTextgs20{
 		z-index: 50;
 		position:relative;
@@ -367,6 +403,19 @@ p{
 	height:100px;
 	/*border:2px solid red;*/
 }
+
+	
+	.Lkyrt{
+		top:220px;
+		margin:0 auto;
+		left:200px;
+		width:500px;
+		height:100px;
+		background-size:100%;
+		background-repeat:no-repeat;
+		background-color: #231F20;
+		background-image: url(../img/kyrtlogo.png);
+	}
 
 	.Lgs20{
 		top:240px;
@@ -457,10 +506,26 @@ p{
 	position:relative;
 	width:420px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:205px;
+	top:195px;
+	margin:0 auto;
+	left:192px;
+	color:#F26122;
+	font-family: 'Montserrat';
+	font-weight:400;
+	font-size: 12px;
+	line-height: 1.2em;
+	opacity: .7;
+}
+
+#btKyrt2{
+	z-index: 50;
+	position:relative;
+	width:420px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.5);
+	top:45px;
 	right:268px;
 	margin:0 auto;
-	color:#000;
+	color:#fff;
 	font-family: 'Montserrat';
 	font-weight:400;
 	font-size: 14px;
@@ -606,6 +671,128 @@ p{
 	background-repeat: no-repeat;
 	/*border:1px solid orange;*/
 }
+
+.kyrt01{
+	position: relative;	
+	top:20px;
+	margin: 0 auto;
+	width:980px;	
+	height:310px;
+	background-image: url(../img/kyrt01.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt02{
+	position: relative;	
+	top:160px;
+	margin: 0 auto;
+	right:220px;
+	width:500px;	
+	height:375px;
+	background-image: url(../img/kyrt02.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt03{
+	position: relative;	
+	bottom:215px;
+	margin: 0 auto;
+	left:290px;
+	width:490px;	
+	height:516px;
+	background-image: url(../img/kyrt03.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt04{
+	position: relative;	
+	bottom:60px;
+	margin: 0 auto;
+	right:245px;
+	width:450px;	
+	height:340px;
+	background-image: url(../img/kyrt04.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt05{
+	position: relative;	
+	bottom:400px;
+	margin: 0 auto;
+	left:250px;
+	width:510px;	
+	height:345px;
+	background-image: url(../img/kyrt05.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt06{
+	position: relative;	
+	top:300px;
+	margin: 0 auto;
+	right:295px;
+	width:347px;	
+	height:426px;
+	background-image: url(../img/kyrt06.png);
+	/*border:1px solid red;*/
+}
+
+.kyrt07{
+	position: relative;	
+	bottom:125px;
+	margin: 0 auto;
+	left:132px;
+	width:478px;	
+	height:425px;
+	background-image: url(../img/kyrt07.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt08{
+	position: relative;	
+	top:100px;
+	margin: 0 auto;
+	width:870px;	
+	height:1230px;
+	background-image: url(../img/kyrt08.png);
+	/*border:1px solid red;*/
+}
+
+.kyrt09{
+	position: relative;	
+	top:150px;
+	margin: 0 auto;
+	width:1050px;	
+	height:300px;
+	background-image: url(../img/kyrt09.png);
+	/*border:1px solid red;*/
+}
+
+.kyrt10{
+	position: relative;	
+	top:330px;
+	margin: 0 auto;
+	right:338px;
+	width:340px;	
+	height:430px;
+	background-image: url(../img/kyrt10.jpg);
+	/*border:1px solid red;*/
+}
+
+.kyrt11{
+	position: relative;	
+	bottom:100px;
+	margin: 0 auto;
+	left:160px;
+	width:635px;	
+	height:430px;
+	background-image: url(../img/kyrt11.jpg);
+	/*border:1px solid red;*/
+}
+
+
+
+
 
 .flar01{
 	position: relative;	
@@ -1044,6 +1231,19 @@ p{
 	/*border:1px solid red;*/
 }
 
+.kyrt0a{
+	z-index: 10;
+	position: relative;	
+	bottom:16.5px;
+	margin:0 auto;
+	left:50px;
+	width:860px;
+	/*height:450px;*/
+	height:100%;
+	background-image: url(../img/kyrt00.png);
+	/*border:1px solid red;*/
+}
+
 
 .gs20-0{
 	z-index: 10;
@@ -1331,6 +1531,18 @@ ul {
 	/*border:2px solid green;*/
 }
 
+#kyrtOverview{
+	position: relative;
+	font-weight: 400;
+	width:600px;
+	bottom:70px;
+	margin:0 auto;
+	left:60px;
+
+	/*background-color:rgba(255,255,255,0.5);*/
+	/*box-shadow: 0 0 15px 15px rgba(255,255,255,0.5);*/
+}
+
 #flarOverview{
 	position: relative;
 	font-weight: 400;
@@ -1439,6 +1651,34 @@ ul {
 	font-size:13pt;
 	/*letter-spacing:.15em;*/
 	line-height:1.5em;
+}
+
+#kyrtText1{
+	width:590px;
+	z-index: 10;
+	top:100px;
+	right:175px;
+}
+
+#kyrtText2{
+	width:590px;
+	z-index: 10;
+	bottom:120px;
+	right:175px;
+}
+
+#kyrtText3{
+	width:590px;
+	z-index: 10;
+	top:240px;
+	right:175px;
+}
+
+#kyrtText4{
+	width:590px;
+	z-index: 10;
+	top:80px;
+	right:175px;
 }
 
 #flarText1{
@@ -1628,6 +1868,11 @@ ul {
 #aboutPB1{
 	top:80px;
 	height:1200px;
+}
+
+#kyrtPB1{
+	top:140px;
+	height:1580px;
 }
 
 #flarPB1{
