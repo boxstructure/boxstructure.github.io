@@ -148,8 +148,8 @@ function setHoverAbout() {
 			TweenLite.to(screenA, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
 
 			TweenLite.to(qcUpdate, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
-			TweenLite.to(qcWelcome, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
-			TweenLite.to(bestView, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+			// TweenLite.to(qcWelcome, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+			// TweenLite.to(bestView, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
 
 			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback2).bind("mouseover mouseleave");
