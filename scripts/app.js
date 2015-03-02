@@ -147,6 +147,10 @@ function setHoverAbout() {
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(screenA, .85, { x:0, autoAlpha:1, ease:"easeOutQuint"});
 
+			TweenLite.to(qcUpdate, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(qcWelcome, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(bestView, .85, { x:0, y:0, autoAlpha:0, ease:"easeOutQuint"});
+
 			$(this).unbind("mouseover mouseleave");
 			$(setHoverNavback2).bind("mouseover mouseleave");
     	}
@@ -1163,6 +1167,7 @@ function setHoverNavback2() {
 				TweenLite.to(bottomCover, .35, {x:0, y:0, delay:.05, autoAlpha:1, ease:"easeOutExpo"});
 
 				TweenLite.set(screenA, {delay:.2, autoAlpha:0, x:-1700});
+				TweenLite.set(clip, {delay:.2, autoAlpha:0, x:850});
 
 				$(setHoverSJVC).bind("mouseover mouseleave");
 				$(setHoverSFDM).bind("mouseover mouseleave");
@@ -1183,6 +1188,7 @@ function setHoverNavback2() {
 				setTimeout( function(){
 				$('#frame0').attr('src', $('#frame0').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
+
 
 			}
         });
