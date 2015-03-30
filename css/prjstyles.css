@@ -412,7 +412,7 @@ p{
 
 #projectLogoTexthalo{
 		position:relative;
-		top:200px;
+		top:350px;
 		right:420px;
 		margin:0 auto;
 		width:50px;
@@ -629,7 +629,7 @@ p{
 	width:350px;
 	height:100px;
 	/*text-shadow:1px 1px 1px rgba(0,0,0,.2);*/
-	top:180px;
+	top:330px;
 	right:260px;
 	margin:0 auto;
 	color:#fff;
@@ -1520,9 +1520,9 @@ ul {
 }
 
 
-
-#bbbatn{
-	
+#bbhalo{
+	top:-155px;
+	/*bottom:800px;*/
 }
 
 #bbmisc{

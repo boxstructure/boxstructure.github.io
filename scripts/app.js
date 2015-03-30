@@ -1013,10 +1013,10 @@ function setHoverHALO() {
 			
 			
 			var bannerHalo = $('#frame13').contents().find(".projectBanner.halo");
-			TweenLite.to(bannerHalo, .6, { delay:.18, y:300, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(bannerHalo, .6, { delay:.18, y:150, autoAlpha:1, ease:"easeOutExpo"});
 
-			// var briefUvia = $('#frame11').contents().find("#bbuvia");
-			// TweenLite.to(briefUvia, .6, { delay:.18, y:100, autoAlpha:1, ease:"easeOutExpo"});
+			var briefUvia = $('#frame11').contents().find("#bbuvia");
+			TweenLite.to(briefUvia, .6, { delay:.18, y:150, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
