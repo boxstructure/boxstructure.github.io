@@ -636,6 +636,11 @@ html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
 	left: 500px;
 } 
 
+.tHalo{
+	top: 500px;
+	left: 500px;
+} 
+
 
 .clip{
 	z-index: 0;

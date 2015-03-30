@@ -1,0 +1,423 @@
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+
+/* =============================================================================
+   HTML5 reset
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body {  
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -moz-font-smoothing: antialiased;
+    -moz-text-size-adjust: 100%; 
+    margin: 0; font-size: 13px; line-height: 1.231; 
+  }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+
+::-moz-selection { background: #5db7cd; color: #fff; text-shadow: none; }
+::selection { background: #5db7cd; color: #fff; text-shadow: none; }
+
+a {
+    text - decoration: none;
+    color: inherit
+}
+a: active,
+a: focus {
+    outline: 0
+}
+
+
+/* =============================================================================
+   Site styles
+   ========================================================================== */
+
+/*
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+*{
+  font-family:Roboto;
+  font-weight:500;
+  font-size:24px;
+  color:#000;
+  *text-align:center;
+    *text-shadow:1px 1px 1px rgba(0, 0, 0, .5);
+    width:100%;
+    text-decoration: none;
+}
+*/
+html, body{
+   
+   width: 100%;
+   height: 100%;
+}
+
+.container{
+	position:relative;
+	width:840px;
+	height:640px;
+  	max-width:840px;
+  	margin:20px auto;
+  	padding:40px;
+  	*border:1px solid red;
+}
+
+.layout-2col{
+    position:absolute;
+    display:table;
+  	width:90%;
+  	height:90%;
+  	*border: 1px solid red;
+}
+
+.col-left{
+	position:relative;
+	display:table-cell;
+	vertical-align: top; 
+	width:50%;
+ 	text-align: right;
+  *border: 1px solid blue;
+}
+
+.col{
+	position:relative;
+	display:table-cell;
+	vertical-align: middle; 
+ 	text-align: left;
+
+  	width: 40%;
+  	*border: 1px solid red;
+}
+
+.watch-container{
+	position:absolute;
+	overflow:hidden;
+   right:60px;
+  	width:100%;
+  	height:100%;
+  	*border:1px solid yellow;
+  	background-size:contain;
+  	background-repeat:no-repeat;
+  	background-image:url("../img/watch-bg-02.png")
+}
+
+.profileTitle{
+ 
+  font-weight:300;
+  font-size:32px;
+  color:#000;
+  *text-align:center;
+    *text-shadow:1px 1px 1px rgba(0, 0, 0, .5);
+    width:100%;
+}
+
+.profileBio{
+ 
+  font-weight:200;
+  font-size:18px;
+  color:#000;
+
+  line-height: 18px;
+  *text-align:center;
+    *text-shadow:1px 1px 1px rgba(0, 0, 0, .5);
+    width:100%;
+    max-width:300px;
+    opacity: .75;
+}
+
+
+/* =============================================================================
+   Screen 
+   ========================================================================== */
+
+
+
+.screen-container{
+ 	width:190px;
+    height:240px;
+    position:absolute;
+    top:145px;
+    left:175px;
+    overflow:hidden;
+    *border: 2px solid red;
+}
+
+
+.screen{
+	position:absolute;
+    width:190px;
+    height:240px;
+    cursor:pointer;
+}
+
+.screenImg{
+    position:absolute;
+    width:190px;
+    height:240px;
+    background-size:contain;
+    background-position: center center;
+    background-repeat:no-repeat;
+    *border:2px solid purple;
+}
+
+.screenImg.one{
+  z-index: 1;
+	background-color:#000;
+    background-image:url("../img/screen-01.png");
+}
+
+.screenImg.oneV1A{
+  background-color:#000;
+    background-image:url("../img/screen-v-01a.png");
+}
+.screenImg.oneV2A{
+  background-color:#000;
+    background-image:url("../img/screen-v-02a.png");
+}
+.screenImg.oneV1B{
+  background-color:#000;
+    background-image:url("../img/screen-v-01b.png");
+}
+.screenImg.oneV2B{
+  background-color:#000;
+    background-image:url("../img/screen-v-02b.png");
+}
+
+.screenImg.two{
+  z-index: 2;
+	background-color:#000;
+    background-image:url("../img/screen-02.png");
+}
+
+.screenImg.three{
+	background-color:#000;
+    background-image:url("../img/screen-03.png");
+}
+
+/* =============================================================================
+   screen V transition button styles
+   ========================================================================== */
+ .buttonsetOne {
+        width:127px;
+        height:52px;
+        top:171px;
+        left:32px;
+        opacity:1;
+        *border-radius: 50%;
+        *border:1px solid blue;
+        position:absolute;
+        cursor:pointer;
+        z-index:150;
+        background-size:contain;
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-image:url("../img/buttonCombo.png");
+}
+ .buttonsetTwo {
+        width:127px;
+        height:52px;
+        top:171px;
+        left:32px;
+        opacity:1;
+        *border-radius: 50%;
+        *border:1px solid blue;
+        position:absolute;
+        cursor:pointer;
+        z-index:150;
+        background-size:contain;
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-image:url("../img/buttonCombo.png");
+}
+
+
+/* =============================================================================
+   ID Profile styles
+   ========================================================================== */
+
+    #cardContainer {
+      font-family:sans-serif;
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      *border:1px solid red;
+      opacity: 1;
+      top:140px;
+      left:90px;
+      z-index: 50;
+      border-radius:50%;
+      margin: -100px 0 0 -75px;      
+     
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+    }
+
+    #card {
+      border-radius:50%;
+      width: 180px;
+      height: 180px;
+      position: absolute;
+          
+
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;         
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+       }
+
+    #card.flipped {
+    
+      opacity: 0;
+      -webkit-transform: rotateY( 45deg );
+         -moz-transform: rotateY( 45deg );
+           -o-transform: rotateY( 45deg );
+              transform: rotateY( 45deg );
+    }
+    
+    #cardBack {
+      border-radius:50%;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+   
+                        
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;                  
+    }
+
+    #cardBack.show{
+        border-radius:50%;
+      opacity: 1;
+      -webkit-transform: rotateY( 45deg );
+         -moz-transform: rotateY( 45deg );
+           -o-transform: rotateY( 45deg );
+              transform: rotateY( 45deg );
+    }
+    
+    
+    .easeOut{
+    
+        -webkit-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+       -moz-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        -ms-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+         -o-transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+            transition: all 250ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    }
+    
+    .easeIn{
+
+        -webkit-transition: all 250ms cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+           -moz-transition: all 250ms cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+            -ms-transition: all 250ms cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+             -o-transition: all 250ms cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+                transition: all 250ms cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic */
+    }
+    
+    #card div, #cardBack  {
+      border-radius:50%;
+      font-face:sans-serif;            
+      display: block;
+       width: 160px;
+      height: 160px;
+      line-height: 160px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card .front {
+      opacity: 0;
+      background: #33bfdb;
+    }
+
+    #cardBack .back {
+      border-radius:50%;
+      width:100%;
+      height:100%;
+      background-color:#000;
+      background-position:center center;
+      background-size: 110%;
+      background-image:url("../img/kevin.jpg");
+      -webkit-transform: rotateY( 315deg );
+         -moz-transform: rotateY( 315deg );
+           -o-transform: rotateY( 315deg );
+              transform: rotateY( 315deg );
+    }
+
+       #cardBack2 .back {
+      border-radius:50%;
+      width:100%;
+      height:100%;
+      background-color:#000;
+      background-position:center center;
+      background-size: 110%;
+      background-image:url("../img/indy.jpg");
+      -webkit-transform: rotateY( 315deg );
+         -moz-transform: rotateY( 315deg );
+           -o-transform: rotateY( 315deg );
+              transform: rotateY( 315deg );
+    }
+  
+/* =============================================================================
+   hotspot for ID Profile 
+   ========================================================================== */
+
+
+.play_border {
+    position:absolute;
+    *border: 8px solid #ED1F24;
+   
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+ 
+    cursor: pointer;
+    
+    margin-top: 30px;
+    margin-left: 5px;
+    z-index:100;
+}
+
+.reverse_border {
+    position:absolute;
+    *border: 8px solid #ED1F24;
+   
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+ 
+    cursor: pointer;
+    
+    margin-top: 30px;
+    margin-left: 5px;
+    z-index:100;
+}

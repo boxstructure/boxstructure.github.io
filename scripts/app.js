@@ -33,6 +33,7 @@ $(document).ready(function(){
 	var screen10 = $('.ten');
 	var screen11 = $('.eleven');
 	var screen12 = $('.twelve');
+	var screen13 = $('.thirteen');
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
@@ -44,9 +45,9 @@ $(document).ready(function(){
 
 	var tabsfdm = $('.tab.effectDS.tSfdm');
 	var tabrice = $('.tab.effectDS.tRice');
-	var tabmisc = $('.tab.effectDS.tMisc');
+	// var tabmisc = $('.tab.effectDS.tMisc');
 	var tabslrv = $('.tab.effectDS.tSlrv');
-	var tabgs20 = $('.tab.effectDS.tGs20');
+	// var tabgs20 = $('.tab.effectDS.tGs20');
 	var tabhtwr = $('.tab.effectDS.tHtwr');
 	var tabco2w = $('.tab.effectDS.tCo2w');
 	var tabsjvc = $('.tab.effectDS.tSjvc');
@@ -54,6 +55,7 @@ $(document).ready(function(){
 	var tabuvia = $('.tab.effectDS.tUvia');
 	var tabbatn = $('.tab.effectDS.tBatn');
 	var tabflar = $('.tab.effectDS.tFlar');
+	var tabhalo = $('.tab.effectDS.tHalo');
 
 	var navback = $ ('.navback');
 	var navback2 = $ ('.navback2');
@@ -91,9 +93,9 @@ $(document).ready(function(){
 
 	TweenLite.set(tabsfdm, {autoAlpha:0});
 	TweenLite.set(tabrice, {autoAlpha:0});
-	TweenLite.set(tabmisc, {autoAlpha:0});
+	// TweenLite.set(tabmisc, {autoAlpha:0});
 	TweenLite.set(tabslrv, {autoAlpha:0});
-	TweenLite.set(tabgs20, {autoAlpha:0});
+	// TweenLite.set(tabgs20, {autoAlpha:0});
 	TweenLite.set(tabhtwr, {autoAlpha:0});
 	TweenLite.set(tabco2w, {autoAlpha:0});
 	TweenLite.set(tabsjvc, {autoAlpha:0});
@@ -101,6 +103,7 @@ $(document).ready(function(){
 	TweenLite.set(tabuvia, {autoAlpha:0});
 	TweenLite.set(tabbatn, {autoAlpha:0});
 	TweenLite.set(tabflar, {autoAlpha:0});
+	TweenLite.set(tabhalo, {autoAlpha:0});
 
 	// TweenLite.set(sfdmBannerText2, {autoAlpha:0});
 
@@ -285,15 +288,17 @@ function setHoverWorkAlpha() {
 			TweenLite.to(tabco2w, .5, { x:-285, y:-460, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabflar, .5, { x:-285, y:-550, autoAlpha:1, ease:"easeInQuart"});
 			// TweenLite.to(tabgs20, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabhtwr, .5, { x:-95, y:-490, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabkyrt, .5, { x:-95, y:-520, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhalo, .5, { x:-95, y:-700, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhtwr, .5, { x:-95, y:-430, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabkyrt, .5, { x:-95, y:-460, autoAlpha:1, ease:"easeInQuart"});
 			// TweenLite.to(tabmisc, .5, { x:95, y:-460, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabrice, .5, { x:-95, y:-310, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabsfdm, .5, { x:95, y:-400, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabslrv, .5, { x:95, y:-400, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabsjvc, .5, { x:95, y:-430, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabuvia, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabrice, .5, { x:95, y:-430, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsfdm, .5, { x:95, y:-340, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabslrv, .5, { x:95, y:-340, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabsjvc, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabuvia, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
 
+			
     	}
         });
 	}
@@ -352,6 +357,7 @@ function setHoverWorkType() {
 		
 			TweenLite.to(tabsjvc, .5, { x:285, y:-550, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabflar, .5, { x:285, y:-560, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhalo, .5, { x:285, y:-540, autoAlpha:1, ease:"easeInQuart"});
 
     	}
         });
@@ -405,8 +411,8 @@ function setHoverWorkChron() {
 			TweenLite.to(tabkyrt, .5, { x:95, y:-580, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabuvia, .5, { x:95, y:-550, autoAlpha:1, ease:"easeInQuart"});
 			TweenLite.to(tabbatn, .5, { x:95, y:-520, autoAlpha:1, ease:"easeInQuart"});
-			TweenLite.to(tabflar, .5, { x:285, y:-670, autoAlpha:1, ease:"easeInQuart"});
-
+			TweenLite.to(tabflar, .5, { x:285, y:-610, autoAlpha:1, ease:"easeInQuart"});
+			TweenLite.to(tabhalo, .5, { x:285, y:-700, autoAlpha:1, ease:"easeInQuart"});
     	}
         });
 	}
@@ -830,49 +836,49 @@ function setHoverBATN() {
 	});
 	setHoverBATN();
 
-function setHoverGS20() {
-	tabgs20
-		.off('mouseover mouseleave mousedown click')
-		.on({
-			mouseover: function(){
-			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(screen9, .85, { autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(tabgs20, .2, { scaleX:1.05, scaleY:1.05});
-			},
+// function setHoverGS20() {
+// 	tabgs20
+// 		.off('mouseover mouseleave mousedown click')
+// 		.on({
+// 			mouseover: function(){
+// 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+// 			TweenLite.to(screen9, .85, { autoAlpha:1, ease:"easeOutQuint"});
+// 			TweenLite.to(tabgs20, .2, { scaleX:1.05, scaleY:1.05});
+// 			},
 
-			mouseleave: function(){
-			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
-			TweenLite.to(screen9, .4, { autoAlpha:0, ease:"easeOutQuint"});
-			TweenLite.to(tabgs20, .2, { scaleX:1, scaleY:1});
-			},
+// 			mouseleave: function(){
+// 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+// 			TweenLite.to(screen9, .4, { autoAlpha:0, ease:"easeOutQuint"});
+// 			TweenLite.to(tabgs20, .2, { scaleX:1, scaleY:1});
+// 			},
 
-			mousedown: function(){
-			TweenLite.to(tabgs20, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+// 			mousedown: function(){
+// 			TweenLite.to(tabgs20, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
-			// $(this).unbind("mouseover mouseleave");
-			},
+// 			// $(this).unbind("mouseover mouseleave");
+// 			},
 
-			click: function(){
-			setTimeout( function(){
+// 			click: function(){
+// 			setTimeout( function(){
 
-			$(mainTemplate).css('z-index', 0);}, 200);
+// 			$(mainTemplate).css('z-index', 0);}, 200);
 
-			TweenLite.to(tabgs20, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
-			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
-			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
-			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
-			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+// 			TweenLite.to(tabgs20, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+// 			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+// 			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+// 			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+// 			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
 			
-			$(tabgs20).unbind("mouseover mouseleave");
-			$(setHoverNavback).bind("mouseover mouseleave");
-    	}
-        });
-	}
+// 			$(tabgs20).unbind("mouseover mouseleave");
+// 			$(setHoverNavback).bind("mouseover mouseleave");
+//     	}
+//         });
+// 	}
 
-	$(tabgs20).click(function(){
-   	setHoverGS20();
-	});
-	setHoverGS20();
+// 	$(tabgs20).click(function(){
+//    	setHoverGS20();
+// 	});
+// 	setHoverGS20();
 
 function setHoverKYRT() {
 	tabkyrt
@@ -979,53 +985,107 @@ function setHoverUVIA() {
 
 
 
-function setHoverMISC() {
-	tabmisc
+function setHoverHALO() {
+	tabhalo
 		.off('mouseover mouseleave mousedown click')
 		.on({
 			mouseover: function(){
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(screen12, .85, { autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(tabmisc, .2, { scaleX:1.05, scaleY:1.05});
+			TweenLite.to(screen13, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(tabhalo, .2, { scaleX:1.05, scaleY:1.05});
 			},
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
-			TweenLite.to(screen12, .4, { autoAlpha:0, ease:"easeOutQuint"});
-			TweenLite.to(tabmisc, .2, { scaleX:1, scaleY:1});
+			TweenLite.to(screen13, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(tabhalo, .2, { scaleX:1, scaleY:1});
 			},
 
 			mousedown: function(){
-			TweenLite.to(tabmisc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+			TweenLite.to(tabhalo, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
 
 			// $(this).unbind("mouseover mouseleave");
 			},
 
 			click: function(){
 			
-			var bannerMisc = $('#frame12').contents().find(".projectBanner.misc");
-			TweenLite.to(bannerMisc, .6, { delay:.18, y:-50, autoAlpha:1, ease:"easeOutExpo"});
+			var bannerHalo = $('#frame13').contents().find(".projectBanner.halo");
+			TweenLite.to(bannerHalo, .6, { delay:.18, y:-60, autoAlpha:1, ease:"easeOutExpo"});
+
+			// var briefUvia = $('#frame11').contents().find("#bbuvia");
+			// TweenLite.to(briefUvia, .6, { delay:.18, y:100, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
 			$(mainTemplate).css('z-index', 0);}, 200);
 
-			TweenLite.to(tabmisc, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+			TweenLite.to(tabhalo, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
 			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
 			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
 			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
 			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
 			
-			$(tabmisc).unbind("mouseover mouseleave");
+			$(tabhalo).unbind("mouseover mouseleave");
 			$(setHoverNavback).bind("mouseover mouseleave");
     	}
         });
 	}
 
-	$(tabmisc).click(function(){
-   	setHoverMISC();
+	$(tabhalo).click(function(){
+   	setHoverHALO();
 	});
-	setHoverMISC();
+	setHoverHALO();
+
+
+
+
+// function setHoverMISC() {
+// 	tabmisc
+// 		.off('mouseover mouseleave mousedown click')
+// 		.on({
+// 			mouseover: function(){
+// 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
+// 			TweenLite.to(screen12, .85, { autoAlpha:1, ease:"easeOutQuint"});
+// 			TweenLite.to(tabmisc, .2, { scaleX:1.05, scaleY:1.05});
+// 			},
+
+// 			mouseleave: function(){
+// 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
+// 			TweenLite.to(screen12, .4, { autoAlpha:0, ease:"easeOutQuint"});
+// 			TweenLite.to(tabmisc, .2, { scaleX:1, scaleY:1});
+// 			},
+
+// 			mousedown: function(){
+// 			TweenLite.to(tabmisc, .15, {scaleX:.97, scaleY:.97, ease:"easeOutExpo"});
+
+// 			// $(this).unbind("mouseover mouseleave");
+// 			},
+
+// 			click: function(){
+			
+// 			var bannerMisc = $('#frame12').contents().find(".projectBanner.misc");
+// 			TweenLite.to(bannerMisc, .6, { delay:.18, y:-50, autoAlpha:1, ease:"easeOutExpo"});
+
+// 			setTimeout( function(){
+
+// 			$(mainTemplate).css('z-index', 0);}, 200);
+
+// 			TweenLite.to(tabmisc, .35, { delay:.4, scaleX:1, scaleY: 1, ease:"easeInQuart"});	
+// 			TweenLite.to(navback, .5, {delay:.15, autoAlpha:.6});
+// 			TweenLite.to(topCover, .5, { delay:.15, x:0, y:-140, autoAlpha:1, ease:"easeOutExpo"});	
+// 			TweenLite.to(bottomCover, .9, { delay:.15, x:0, y:800, autoAlpha:1, ease:"easeOutExpo"});
+// 			TweenLite.to(bottomCover, .45, { delay:.35, autoAlpha:0});
+			
+// 			$(tabmisc).unbind("mouseover mouseleave");
+// 			$(setHoverNavback).bind("mouseover mouseleave");
+//     	}
+//         });
+// 	}
+
+// 	$(tabmisc).click(function(){
+//    	setHoverMISC();
+// 	});
+// 	setHoverMISC();
 
 ////////////////////////////////////////////////////////Back Navigation///////////
 
@@ -1068,10 +1128,11 @@ function setHoverNavback() {
 				$(setHoverHTWR).bind("mouseover mouseleave");
 				$(setHoverRICE).bind("mouseover mouseleave");
 				$(setHoverBATN).bind("mouseover mouseleave");
-				$(setHoverGS20).bind("mouseover mouseleave");
+				// $(setHoverGS20).bind("mouseover mouseleave");
 				$(setHoverKYRT).bind("mouseover mouseleave");
 				$(setHoverUVIA).bind("mouseover mouseleave");
-				$(setHoverMISC).bind("mouseover mouseleave");
+				// $(setHoverMISC).bind("mouseover mouseleave");
+				$(setHoverHALO).bind("mouseover mouseleave");
 
 				setTimeout( function(){
 				$('#frame1').attr('src', $('#frame1').attr('src')); contentWindow.scrollTo(0,0);},
@@ -1106,8 +1167,11 @@ function setHoverNavback() {
 				setTimeout( function(){
 				$('#frame11').attr('src', $('#frame11').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
+				// setTimeout( function(){
+				// $('#frame12').attr('src', $('#frame12').attr('src')); contentWindow.scrollTo(0,0);},
+				// 200)
 				setTimeout( function(){
-				$('#frame12').attr('src', $('#frame12').attr('src')); contentWindow.scrollTo(0,0);},
+				$('#frame13').attr('src', $('#frame13').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
 
 
@@ -1177,10 +1241,11 @@ function setHoverNavback2() {
 				$(setHoverHTWR).bind("mouseover mouseleave");
 				$(setHoverRICE).bind("mouseover mouseleave");
 				$(setHoverBATN).bind("mouseover mouseleave");
-				$(setHoverGS20).bind("mouseover mouseleave");
+				// $(setHoverGS20).bind("mouseover mouseleave");
 				$(setHoverKYRT).bind("mouseover mouseleave");
 				$(setHoverUVIA).bind("mouseover mouseleave");
-				$(setHoverMISC).bind("mouseover mouseleave");
+				// $(setHoverMISC).bind("mouseover mouseleave");
+				$(setHoverHALO).bind("mouseover mouseleave");
 
 			
 
