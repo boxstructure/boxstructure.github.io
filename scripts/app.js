@@ -112,6 +112,9 @@ $(document).ready(function(){
 	TweenLite.set(ttlCateg, {autoAlpha:0});
 	TweenLite.set(ttlAlpha, {autoAlpha:0});
 
+	var bannerHalo = $('#frame13').contents().find(".projectBanner.halo");
+	TweenLight.set(bannerHalo, {y:-300});
+
 	$(document).on('pointermove', function(event) {
             event.preventDefault();
     });
@@ -1009,7 +1012,7 @@ function setHoverHALO() {
 
 			click: function(){
 			
-			var bannerHalo = $('#frame13').contents().find(".projectBanner.halo");
+			
 			TweenLite.to(bannerHalo, .6, { delay:.18, y:-60, autoAlpha:1, ease:"easeOutExpo"});
 
 			// var briefUvia = $('#frame11').contents().find("#bbuvia");
