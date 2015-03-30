@@ -260,7 +260,8 @@ p{
 
 	.halo{
 		width:100%;
-		background-size: 1000px auto;
+		background-size: 100% auto;
+		background-position: 0, 100px;
 		height:800px;
 		/*background-position: 15px;*/
 		background-repeat: no-repeat;
