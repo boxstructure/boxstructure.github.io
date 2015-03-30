@@ -1016,7 +1016,7 @@ function setHoverHALO() {
 			TweenLite.to(bannerHalo, .6, { delay:.18, y:150, autoAlpha:1, ease:"easeOutExpo"});
 
 			var briefHalo = $('#frame13').contents().find("#bbhalo");
-			TweenLite.to(briefHalo, .6, { delay:.18, y:350, autoAlpha:1, ease:"easeOutExpo"});
+			TweenLite.to(briefHalo, .6, { delay:.18, y:200, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
 
