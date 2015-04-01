@@ -1012,10 +1012,10 @@ function setHoverHALO() {
 			click: function(){
 			
 			
-			var bannerHalo = $('#frame13').contents().find(".projectBanner.halo");
+			var bannerHalo = $('#frame12').contents().find(".projectBanner.halo");
 			TweenLite.to(bannerHalo, .6, { delay:.18, y:150, autoAlpha:1, ease:"easeOutExpo"});
 
-			var briefHalo = $('#frame13').contents().find("#bbhalo");
+			var briefHalo = $('#frame12').contents().find("#bbhalo");
 			TweenLite.to(briefHalo, .6, { delay:.18, y:200, autoAlpha:1, ease:"easeOutExpo"});
 
 			setTimeout( function(){
