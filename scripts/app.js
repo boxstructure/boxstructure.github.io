@@ -33,7 +33,7 @@ $(document).ready(function(){
 	var screen10 = $('.ten');
 	var screen11 = $('.eleven');
 	var screen12 = $('.twelve');
-	var screen13 = $('.thirteen');
+
 
 	var ttlBrief = $('#brief');
 	var ttlChrono = $('#ttlChrono');
@@ -993,13 +993,13 @@ function setHoverHALO() {
 		.on({
 			mouseover: function(){
 			TweenLite.to(clip, .85, { x:0, y:0, autoAlpha:1, ease:"easeOutQuint"});
-			TweenLite.to(screen13, .85, { autoAlpha:1, ease:"easeOutQuint"});
+			TweenLite.to(screen12, .85, { autoAlpha:1, ease:"easeOutQuint"});
 			TweenLite.to(tabhalo, .2, { scaleX:1.05, scaleY:1.05});
 			},
 
 			mouseleave: function(){
 			TweenLite.to(clip, .4, { x:850, y:0, autoAlpha:0, ease:"easeOutQuint"});	
-			TweenLite.to(screen13, .4, { autoAlpha:0, ease:"easeOutQuint"});
+			TweenLite.to(screen12, .4, { autoAlpha:0, ease:"easeOutQuint"});
 			TweenLite.to(tabhalo, .2, { scaleX:1, scaleY:1});
 			},
 
@@ -1170,12 +1170,10 @@ function setHoverNavback() {
 				setTimeout( function(){
 				$('#frame11').attr('src', $('#frame11').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
-				// setTimeout( function(){
-				// $('#frame12').attr('src', $('#frame12').attr('src')); contentWindow.scrollTo(0,0);},
-				// 200)
 				setTimeout( function(){
-				$('#frame13').attr('src', $('#frame13').attr('src')); contentWindow.scrollTo(0,0);},
+				$('#frame12').attr('src', $('#frame12').attr('src')); contentWindow.scrollTo(0,0);},
 				200)
+			
 
 
 			}

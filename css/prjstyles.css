@@ -129,7 +129,7 @@ p{
 	width:100%;
 	min-width: 980px;
 	margin:0 auto;
-	overflow: hidden;
+	overflow: scroll;
 	/*border:3px solid red;*/
 }
 
@@ -261,7 +261,7 @@ p{
 	.halo{
 		width:100%;
 		background-size: 100% auto;
-		background-position: 0, 100px;
+		/*background-position: 0, 30px;*/
 		height:800px;
 		/*background-position: 15px;*/
 		background-repeat: no-repeat;
